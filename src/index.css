@@ -1,0 +1,197 @@
+/* 全局样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', 'SimSun', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3498db;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2980b9;
+}
+
+/* 通用样式 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.slide-in {
+  animation: slideIn 0.6s ease-out;
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+
+/* 卡片样式 */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 响应式工具类 */
+.hidden-mobile {
+  display: block;
+}
+
+.visible-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+}
+
+/* 加载动画 */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 错误样式 */
+.error {
+  color: #e74c3c;
+  background-color: #fdf2f2;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #e74c3c;
+}
+
+/* 成功样式 */
+.success {
+  color: #27ae60;
+  background-color: #f0f9f0;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #27ae60;
+}
+
+/* 警告样式 */
+.warning {
+  color: #f39c12;
+  background-color: #fefcf0;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #f39c12;
+}
+
+/* 信息样式 */
+.info {
+  color: #3498db;
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #3498db;
+}
