@@ -1,5 +1,5 @@
-import React from 'react';
-import './PageTemplate.css';
+import React from "react";
+import "./PageTemplate.css";
 
 const Achievement = () => {
   return (
@@ -8,10 +8,7 @@ const Achievement = () => {
 
       <div className="content-section">
         <h2>一、成果简介</h2>
-        <p>
-          本成果针对职业院校学生生命价值观教育中存在的突出问题，创新性地提出了"三维构建、三位共育"的生命价值观教育模式。
-          该模式系统构建了生命价值观教育的内容体系，创新了教育载体和实施路径，形成了科学完整的教育体系。
-        </p>
+        <p>这是一段成果简介，主要介绍成果的创新点和解决的教学问题。</p>
       </div>
 
       <div className="content-section">
