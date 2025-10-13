@@ -26,3 +26,19 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.image-container {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 居中图注文本（支持 p 和 span） */
+.image-container p,
+.image-container span {
+  text-align: center;
+  margin: 8px 0 0 0;
+  padding: 0;
+  display: block;
+}
