@@ -8,8 +8,8 @@ const Navigation = () => {
 
   const menuItems = [
     { path: '/', label: '首页' },
-    { path: '/achievement', label: '成果推荐书' },
-    { path: '/summary', label: '成果总结报告' },
+    { path: '/achievement', label: '教学成果申报书' },
+    { path: '/summary', label: '教学成果总结报告' },
     {
       path: '/application',
       label: '成果应用和证明材料',
