@@ -1,3 +1,28 @@
 p {
   text-indent: 2em;
 }
+
+.main-title {
+  text-indent: 0 !important;
+}
+
+.indent-name {
+  margin-left: 5.5em !important;
+  display: inline-block;
+  text-indent: 0 !important;
+}
+
+.date-right {
+  text-align: right !important;
+  text-indent: 0 !important;
+  margin: 0 !important;
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
