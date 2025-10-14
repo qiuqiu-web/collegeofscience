@@ -97,6 +97,7 @@ import formula12 from "../images/公式12.png";
 import formula13 from "../images/公式13.png";
 import formula14 from "../images/公式14.png";
 import formula15 from "../images/公式15.png";
+import formula16 from "../images/公式16.png";
 
 const Application = () => {
   return (
@@ -426,7 +427,7 @@ const Application = () => {
         <p>在压裂中，压裂液沿裂缝向地层滤失。一般认为，这种滤失受三种机理的控制即滤液粘度、地层流体的压缩性和压裂液的造壁性。压裂液滤失量的多少常以滤失系数的大小来表示。在计算受地层流体压缩性控制的滤失系数时，可导出下面的方程：</p>
 
         <div className="equation-container">
-          <img src={formula13} alt="公式16 - 压裂液滤失系数模型"></img>
+          <img src={formula16} alt="公式16 - 压裂液滤失系数模型"></img>
           <span className="formula-number">(2.1)</span>
         </div>
 
