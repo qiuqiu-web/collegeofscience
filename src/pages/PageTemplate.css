@@ -49,13 +49,14 @@
   position: relative;
   padding-left: 30px;
   color: #555;
+  text-indent: 2em;
 }
 
 .content-list li::before {
-  content: '✓';
+  /* content: ""; */
   position: absolute;
   left: 0;
-  color: #27ae60;
+  /* color: #27ae60; */
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -148,4 +149,25 @@
   .highlight-box h3 {
     font-size: 1.1em;
   }
+}
+image-container {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-container h5 {
+  text-align: center;
+  margin: 8px 0 0 0;
+  padding: 0;
+  display: block;
 }
