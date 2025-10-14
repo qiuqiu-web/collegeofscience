@@ -88,6 +88,24 @@ import variable17 from "../images/变量17.png";
 import variable18 from "../images/变量18.png";
 import variable19 from "../images/变量19.png";
 import variable20 from "../images/变量20.png";
+import variable21 from "../images/变量21.png";
+import variable22 from "../images/变量22.png";
+import variable23 from "../images/变量23.png";
+import variable24 from "../images/变量24.png";
+import variable25 from "../images/变量25.png";
+import variable26 from "../images/变量26.png";
+import variable27 from "../images/变量27.png";
+import variable28 from "../images/变量28.png";
+import variable29 from "../images/变量29.png";
+import variable30 from "../images/变量30.png";
+import variable31 from "../images/变量31.png";
+import variable32 from "../images/变量32.png";
+import variable33 from "../images/变量33.png";
+import variable34 from "../images/变量34.png";
+import variable35 from "../images/变量35.png";
+import variable36 from "../images/变量36.png";
+import variable37 from "../images/变量37.png";
+import variable38 from "../images/变量38.png";
 // 新增公式图片导入
 import formula8 from "../images/公式8.png";
 import formula9 from "../images/公式9.png";
@@ -98,6 +116,21 @@ import formula13 from "../images/公式13.png";
 import formula14 from "../images/公式14.png";
 import formula15 from "../images/公式15.png";
 import formula16 from "../images/公式16.png";
+import formula17 from "../images/公式17.png";
+import formula18 from "../images/公式18.png";
+import formula19 from "../images/公式19.png";
+import formula20 from "../images/公式20.png";
+import formula21 from "../images/公式21.png";
+import formula22 from "../images/公式22.png";
+import formula23 from "../images/公式23.png";
+import formula24 from "../images/公式24.png";
+import formula25 from "../images/公式25.png";
+import formula26 from "../images/公式26.png";
+import formula27 from "../images/公式27.png";
+import formula28 from "../images/公式28.png";
+import formula29 from "../images/公式29.png";
+import formula30 from "../images/公式30.png";
+
 
 const Application = () => {
   return (
@@ -431,7 +464,98 @@ const Application = () => {
           <span className="formula-number">(2.1)</span>
         </div>
 
-        <p>式中</p>
+        <p><img src={variable21} alt="p(x,t)" className="inline-math" />为点x在t时刻的压力，<img src={variable22} alt="p_i" className="inline-math" />为原始地层压力，<img src={variable23} alt="η" className="inline-math" />为地层扩散系数。</p>
+
+        <p>利用拉普拉斯变换可以求得该问题的精确解是：</p>
+
+        <div className="equation-container">
+          <img src={formula17} alt="公式17 - 拉普拉斯变换解"></img>
+          <img src={formula18} alt="公式18 - 拉普拉斯变换解"></img>
+          <span className="formula-number">(2.2)</span>
+        </div>
+
+        <p>其中<img src={variable24} alt="erfc(x)" className="inline-math" />为余误差函数，<img src={variable25} alt="erf(x)" className="inline-math" />为误差函数：</p>
+
+        <div className="equation-container">
+          <img src={formula19} alt="公式19 - 误差函数定义"></img>
+          <span className="formula-number">(2.3)</span>
+        </div>
+
+        <h5>2.2.3.3 单相渗流的连续性方程</h5>
+
+        <p>油气渗流必须遵循质量守恒定律（又称连续性原理）。该原理可表述为：对于地层中无源无汇的微小单元体，在其封闭表面内流体质量的变化量等于给定时间间隔内流入与流出该封闭表面的流体质量之差。根据这一原理建立的方程称为质量守恒方程或连续性方程。</p>
+
+        {/* <p>连续性方程表达了运动要素（速度、密度、饱和度、浓度等）与时间和坐标变化的关系。</p> */}
+
+        {/* <p>采用微分单元分析法建立质量守恒方程。在地层中取一微小六面体单元，设单元体内<img src={variable23} alt="M(x,y,z)" className="inline-math" />点处沿各坐标轴的质量速度分量分别为<img src={variable24} alt="ρv_x" className="inline-math" />、<img src={variable25} alt="ρv_y" className="inline-math" />、<img src={variable21} alt="ρv_z" className="inline-math" />。</p> */}
+        <p>
+          连续性方程的表现形式是给出运动要素（速度、密度、饱和度、浓度）随时间和坐标变化关系.
+        </p>
+
+        <div className="equation-container">
+          <img src={formula20} alt="公式20 - 连续性方程"></img>
+          {/* <span className="formula-number">(2.4)</span> */}
+        </div>
+        <p>下面利用微元分析法来建立质量守恒方程.在地层中取微小六面体单元，单元体中<img src={variable26} alt="M(x,y,z)" className="inline-math" /><img src={variable27} alt="M(x,y,z)" className="inline-math" />点质量速度在各坐标轴上分量为<img src={variable28} alt="ρv_x" className="inline-math" />、<img src={variable29} alt="ρv_y" className="inline-math" />、<img src={variable30} alt="ρv_z" className="inline-math" />.</p>
+
+        <p>注意到点<img src={variable31} alt="M'" className="inline-math" /> <img src={variable32} alt="(x - dx/2, y, z)" className="inline-math" />，点<img src={variable33} alt="M''" className="inline-math" /> <img src={variable34} alt="(x + dx/2, y, z)" className="inline-math" />，</p>
+
+        <p>故点<img src={variable31} alt="M'" className="inline-math" />的质量速度为</p>
+
+        <div className="equation-container">
+          <img src={formula21} alt="公式21 - M'点质量速度"></img>
+        </div>
+
+        <p>点<img src={variable33} alt="M''" className="inline-math" />的质量速度为</p>
+
+        <div className="equation-container">
+          <img src={formula22} alt="公式22 - M''点质量速度"></img>
+        </div>
+
+        <p>从而在<img src={variable35} alt="dt" className="inline-math" />时间内，沿<img src={variable36} alt="x" className="inline-math" />方向流入和流出单元体内的流体质量分别为</p>
+
+        <div className="equation-container">
+          <img src={formula23} alt="公式23 - x方向流入质量"></img>
+        </div>
+
+        <p>和</p>
+
+        <div className="equation-container">
+          <img src={formula24} alt="公式24 - x方向流出质量"></img>
+        </div>
+
+        <p>从而在<img src={variable35} alt="dt" className="inline-math" />时间内，沿<img src={variable36} alt="x" className="inline-math" />方向流入和流出的流体质量差为</p>
+
+        <div className="equation-container">
+          <img src={formula25} alt="公式25 - x方向质量差"></img>
+        </div>
+
+        <p>同理在<img src={variable35} alt="dt" className="inline-math" />时间内，沿<img src={variable37} alt="y" className="inline-math" />、<img src={variable38} alt="z" className="inline-math" />方向流入和流出的流体质量差为</p>
+
+        <div className="equation-container">
+          <img src={formula26} alt="公式26 - y方向质量差"></img>
+        </div>
+
+        <p>和</p>
+
+        <div className="equation-container">
+          <img src={formula27} alt="公式27 - z方向质量差"></img>
+        </div>
+
+        <p>在<img src={variable35} alt="dt" className="inline-math" />时间内，六面体内流入和流出的总的流体质量差为</p>
+
+        <div className="equation-container">
+          <img src={formula28} alt="公式28 - 总质量差"></img><img src={formula29} alt="公式29 - 孔隙体积"></img><img src={formula30} alt="公式30 - 流体质量"></img>
+        </div>
+
+        <p>经过六面体流入和流出的质量之所以会不一样，是因为在六面体内岩石和液体弹性能量的作用下，释放或储存一部分质量的结果（岩石的弹性表现为孔隙度的变化，液体弹性表现为液体密度的变化）。六面体内的质量变化应为：</p>
+
+        <p>六面体内的孔隙体积：<img src={variable38} alt="φdxdydz" className="inline-math" /></p>
+
+        {/* <div className="equation-container">
+          <img src={formula30} alt="公式30 - 流体质量"></img>
+        </div> */}
+
 
       </div>
     </div>
