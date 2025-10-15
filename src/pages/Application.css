@@ -156,19 +156,6 @@
   text-align: center;
 }
 
-/* 内容段落样式 */
-.content-section p {
-  line-height: 1.8;
-  margin: 15px 0;
-  text-align: justify;
-  text-indent: 2em;
-}
-
-/* 数学公式内联样式 */
-p:has($) {
-  text-indent: 0;
-}
-
 /* 内联数学图片样式 */
 .inline-math {
   height: 1.2em;
@@ -237,11 +224,6 @@ h5 {
     font-size: 1.1em;
     margin: 20px 0 12px 0;
   }
-
-  .content-section p {
-    text-indent: 1.5em;
-    line-height: 1.6;
-  }
 }
 
 @media (max-width: 480px) {
@@ -287,10 +269,5 @@ h5 {
   .image-container h2 {
     font-size: 1em;
     margin: 15px 0 10px 0;
-  }
-
-  .content-section p {
-    text-indent: 1em;
-    line-height: 1.5;
   }
 }

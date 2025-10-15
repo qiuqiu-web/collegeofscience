@@ -159,6 +159,37 @@ import v8 from "../images/v8.png";
 import v9 from "../images/v9.png";
 import v10 from "../images/v10.png";
 import v11 from "../images/v11.png";
+// 继续添加新的变量和公式图片
+import p1 from "../images/p1.png";
+import p2 from "../images/p2.png";
+import p3 from "../images/p3.png";
+import p4 from "../images/p4.png";
+import p5 from "../images/p5.png";
+import p6 from "../images/p6.png";
+import p7 from "../images/p7.png";
+import p10 from "../images/p10.png";
+import p11 from "../images/p11.png";
+import p12 from "../images/p12.png";
+import p13 from "../images/p13.png";
+
+
+import x1 from "../images/x1.png";
+import x2 from "../images/x2.png";
+import x3 from "../images/x3.png";
+import x4 from "../images/x4.png";
+import x5 from "../images/x5.png";
+import x6 from "../images/x6.png";
+import x7 from "../images/x7.png";
+import x8 from "../images/x8.png";
+import x9 from "../images/x9.png";
+import x10 from "../images/x10.png";
+import x11 from "../images/x11.png";
+import x12 from "../images/x12.png";
+import x13 from "../images/x13.png";
+import x14 from "../images/x14.png";
+import p14 from "../images/p14.png";
+import p15 from "../images/p15.png";
+import p16 from "../images/p16.png";
 
 const Application = () => {
   return (
@@ -690,9 +721,167 @@ const Application = () => {
           六面体内的孔隙体积：
           <img src={variable38} alt="φdxdydz" className="inline-math" />
         </p>
-        {/* <div className="equation-container">
-          <img src={formula30} alt="公式30 - 流体质量"></img>
-        </div> */}
+
+        <p>
+          六面体内的流体质量：
+          <img src={p1} alt="ρφdxdydz" className="inline-math" />
+        </p>
+        <p>
+          单位时间内流体质量变化率：
+          <img src={p2} alt="ρφdxdydz" className="inline-math" />
+        </p>
+        <p>
+          <img src={variable35} alt="dt" className="inline-math" />
+          时间内流体质量总的变化为：
+          <img src={p3} alt="ρφdxdydz" className="inline-math" />
+        </p>
+        <p>
+          显然，<img src={variable35} alt="dt" className="inline-math" />时间内六面体质量总的变化应等于六面体在<img src={variable35} alt="dt" className="inline-math" />时间内流入和流出的质量差，即：
+        </p>
+
+        <div className="equation-container">
+          <img src={x1} alt="公式31 - 质量守恒方程"></img>
+        </div>
+
+        <p>
+          消去<img src={p4} alt="φdxdydz" className="inline-math" />得到连续性方程：
+        </p>
+        <div className="equation-container">
+          <img src={x2} alt="公式31 - 质量守恒方程"></img>
+        </div>
+        <p>上式还可以写成：</p>
+        <div className="equation-container">
+          <img src={x3} alt="公式32 - 连续性方程"></img>
+        </div>
+
+        <p>上式就是单相均质可压缩流体在弹性孔隙介质中的质量守恒方程.</p>
+
+        <p>
+          如果再利用流体的运动方程以及岩石和流体的状态方程可以演算得到如下线性三维抛物型方程
+        </p>
+
+        <div className="equation-container">
+          <img src={x4} alt="公式33 - 单相渗流连续性方程"></img>
+        </div>
+
+        <p>
+          上式就是弹性孔隙介质单相可压缩液体的渗流数学模型，其中表示导压系数.
+        </p>
+        <p>除了单相渗流之外，还可以考虑油水两相渗流和油气两相渗流问题，在不考虑毛管力的情况下，和上面类似的方法可以导出两相渗流的质量守恒方程</p>
+        <div className="equation-container">
+          <img src={x5} alt="公式34 - 线性抛物型方程"></img>
+          <img src={x6} alt="η = k/(φμc_t)" className="inline-math" />
+        </div>
+        <p>如果再利用两相的运动方程</p>
+
+        <div className="equation-container">
+          <img src={x7} alt="x7"></img>
+          <img src={x8} alt="x8" className="inline-math" />
+        </div>
+
+        <p>
+          可以得到
+        </p>
+
+        <div className="equation-container">
+          <img src={x9} alt="油相质量守恒方程"></img>
+        </div>
+
+        <div className="equation-container">
+          <img src={x10} alt="水相质量守恒方程"></img>
+        </div>
+
+        <p>
+          其中<img src={p5} alt="K_o(S)" className="inline-math" />和<img src={p6} alt="K_w(S)" className="inline-math" />分别表示油和水的相渗透率，<img src={p7} alt="S" className="inline-math" />为饱和度。
+        </p>
+
+        <p>
+          如果考虑毛管力，将会得到一个复杂的二阶非线性偏微分方程，这种方程只在某些简单情况下才有精确解。
+        </p>
+
+        <h5>2.2.3.4 钻具故障概率分析</h5>
+
+        <p>
+          钻具是钻井作业中不可缺少的工具，复杂的地质条件、恶劣的井下环境、复合应力以及现场使用等因素都可能导致钻具失效。钻具失效模式主要有表面损伤、过度变形、钻具泄漏和断裂等。
+        </p>
+
+        <p>
+          深地川科1井使用新型钻具，专家分析给出以下概率：钻具疲劳工作的概率为0.03，在疲劳工作条件下发生疲劳断裂的概率为0.9；钻具过载工作的概率为0.04，在过载工作条件下发生疲劳断裂的概率为0.85；井下为硫化氢超标环境的概率为0.05，在硫化氢超标环境下发生氢脆断裂的概率为0.8。试分析：
+        </p>
+
+        <p>
+          (1) 该新型钻具在使用过程中发生失效的概率是多少？
+        </p>
+
+        <p>
+          (2) 如果已经发生失效，最可能的原因是什么？
+        </p>
+
+        <h5>解</h5>
+
+        <p>
+          设A表示钻具失效，<img src={p13} alt="B_i (i=1,2,3)" className="inline-math" />分别表示钻具疲劳工作、过载工作和井下为硫化氢超标环境，由题意可得：
+        </p>
+
+        <div className="equation-container">
+          <img src={p10} alt="概率条件1"></img>
+        </div>
+
+        <div className="equation-container">
+          <img src={p11} alt="概率条件2"></img>
+        </div>
+
+
+        <p>
+          (1) 由全概率公式可得，
+        </p>
+
+        <div className="equation-container">
+          <img src={p12} alt="全概率公式计算"></img>
+        </div>
+
+        <p>
+          (2) 由贝叶斯公式可得，
+        </p>
+
+        <div className="equation-container">
+          <img src={x11} alt="贝叶斯公式计算1"></img>
+        </div>
+
+        <div className="equation-container">
+          <img src={x12} alt="贝叶斯公式计算2"></img>
+        </div>
+
+        <div className="equation-container">
+          <img src={x13} alt="贝叶斯公式计算3"></img>
+        </div>
+
+        <p>
+          故在本例中该新型钻具使用过程中引发失效故障的概率是0.101，且如果已经引发了失效故障，最有可能是井下环境硫化氢超标引起的。
+        </p>
+
+        <h5>2.2.3.5 勘探甜点区分析的概率问题</h5>
+
+        <p>
+          在油气勘探中，识别"甜点"区是十分重要的。"甜点"区是指储层分布有利、含油较丰富、物性较好、易于改造的有利储层分布区。假设某区块面积为40km×40km，20km×20km"甜点"区位于中心位置，问如果随意在该区域布置10口测试井，恰有8口井打在"甜点"区的概率是多少？
+        </p>
+
+        <h5>解</h5>
+
+        <p>
+          设A表示一口井可打到"甜点"区，则<img src={p14} alt="P(A) = 20×20 / 40×40 = 1/4" className="inline-math" />。10口井中任意一口井能打在"甜点"区的概率都是1/4，未打在"甜点"区的概率是3/4，根据独立性，这是一个10重的伯努利试验，从而B="至少有一口没有打在"甜点"区"的概率为
+        </p>
+
+        <div className="equation-container">
+          <img src={x13} alt="伯努利试验概率计算"></img>
+        </div>
+
+        <h5>2.2.3.6 钻头选择方法</h5>
+
+        <p>
+          在钻井行业中，钻头选择的研究和实践由来已久。不同的地质层位需要不同的钻头。钻头选择主要有两种思路：一是根据岩石的力学性质选择与之匹配的钻头；二是根据历史钻井数据，评价钻头在特定区域和层位的使用效果，找出适合的钻头。这种双思路的方法已被钻井界广泛接受。
+        </p>
+
         {/* 。。。。。。。。55页开始。。。。。。。。 */}
         <h3>钻头选型方法</h3>
         <p>
