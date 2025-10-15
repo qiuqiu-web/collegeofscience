@@ -1,6 +1,7 @@
 import React from "react";
 import "./PageTemplate.css";
 import "./Application.css";
+import biaoge1 from "./biaoge1";
 // 2.1.1的图片
 import s1 from "../images/SWPU2020年教学成果二等奖.png";
 import s2 from "../images/SWPU研究生三等奖1.png";
@@ -131,6 +132,33 @@ import formula28 from "../images/公式28.png";
 import formula29 from "../images/公式29.png";
 import formula30 from "../images/公式30.png";
 
+//钻头相关图片
+import bg1 from "../images/表格1.png";
+import bg2 from "../images/表格2.png";
+import bg3 from "../images/表格3.png";
+import bg4 from "../images/表格4.png";
+import bg5 from "../images/表格5.png";
+import bg6 from "../images/表格6.png";
+import z1 from "../images/钻头1.png";
+import z2 from "../images/钻头2.png";
+import z3 from "../images/钻头3.png";
+import z4 from "../images/钻头4.png";
+import z5 from "../images/钻头5.png";
+//2.2.3.7中的公式变量图片
+import f1 from "../images/f1.png";
+import f2 from "../images/f2.png";
+import f3 from "../images/f3.png";
+import v1 from "../images/v1.png";
+import v2 from "../images/v2.png";
+import v3 from "../images/v3.png";
+import v4 from "../images/v4.png";
+import v5 from "../images/v5.png";
+import v6 from "../images/v6.png";
+import v7 from "../images/v7.png";
+import v8 from "../images/v8.png";
+import v9 from "../images/v9.png";
+import v10 from "../images/v10.png";
+import v11 from "../images/v11.png";
 
 const Application = () => {
   return (
@@ -319,16 +347,30 @@ const Application = () => {
         <h4>2.2.3 应用案例库（部分）</h4>
         <h5>2.2.3.1 油藏数值模拟的线性求解算法</h5>
         <p>
-          油藏数值模拟起源于20世纪50年代,它是定量描述非均质储油地层中多相流体流动规律的工具，在油藏管理、动态预测、二次开采、井位部署、方案调整等方面起着非常重要的作用. 随着油藏描述技术的不断进步，大量的地震、地质、测井、动态油藏数据可供油藏工程师用来建立越来越精细的数值模型. 目前，大型油田的油藏数值模拟釆用的水平方向网格尺寸多为100m量级，而高分辨率的油藏数值模拟的网格尺寸需要25m甚至更小，这就需要模拟计算千万以上量级网格单元的模型，对现有模拟器是一个巨大的挑战. 油藏数值模拟过程中通常需要求解大规模的线性代数方程组. 在全隐式离散方法中线性方程组的求解时间通常占到模拟时间的80%以上. 由于离散方程的条件数与网格尺寸有关，网格尺寸越小矩阵条件数越坏，线性方程组的求解难度也越大. 模拟千万量级模型对线性求解算法及其软件模块的性能提出了较高的要求.
+          油藏数值模拟起源于20世纪50年代,它是定量描述非均质储油地层中多相流体流动规律的工具，在油藏管理、动态预测、二次开采、井位部署、方案调整等方面起着非常重要的作用.
+          随着油藏描述技术的不断进步，大量的地震、地质、测井、动态油藏数据可供油藏工程师用来建立越来越精细的数值模型.
+          目前，大型油田的油藏数值模拟釆用的水平方向网格尺寸多为100m量级，而高分辨率的油藏数值模拟的网格尺寸需要25m甚至更小，这就需要模拟计算千万以上量级网格单元的模型，对现有模拟器是一个巨大的挑战.
+          油藏数值模拟过程中通常需要求解大规模的线性代数方程组.
+          在全隐式离散方法中线性方程组的求解时间通常占到模拟时间的80%以上.
+          由于离散方程的条件数与网格尺寸有关，网格尺寸越小矩阵条件数越坏，线性方程组的求解难度也越大.
+          模拟千万量级模型对线性求解算法及其软件模块的性能提出了较高的要求.
         </p>
       </div>
       <div>
         <h5>2.2.3.2 黑油模型及其离散</h5>
         <p>
-          黑油模型的偏微分方程组具有高度非线性和强耦合性，常釆用全隐式方法进行求解，其中需要求解大规模、非对称、强耦合的雅可比方程组.  Krylov子空间方法,如广义最小残量法(GMRES)、双共轭梯度法(BiCGstab)等，是求解这类方程组的常用方法. 但直接应用这些方法一般收敛较慢，必须使用合适的预条件子来进行加速. 研究人员针对黑油模型的求解进行了大量尝试，并提出了很多求解算法:一类是基于矩阵分解的整体型预条件子,如ILU、嵌套分解等；另一类是多阶段预条件算法,如组合型预条件子、约束残量预条件子(CPR)等. 老一代油藏数值模拟器中常用矩阵分解型预条件子,但这类方法在求解大规模问题时速度较慢。本案例介绍了一种适用于超大规模精细油藏全隐式模拟的稳健、高效的雅可比方程求解算法。研究人员提出了一种分裂型预条件子，其中的左预条件子釆用工程界常用的ABF解耦方法，ABF方法能有效地减弱不同物理量之间的耦合关系，极大地改善雅可比矩阵的特征值分布。然后，根据 ABF 解耦后雅可比矩阵的特点,有针对性地设计了一种多阶段子空间校正右预条件子. 为了测试该分裂型预条件子的高效性和稳健性，研究人员在台式机上进行了数十万至千万网格节点算例的模拟计算，并通过一个实际油田模型验证了精细模拟的重大实际价值.
+          黑油模型的偏微分方程组具有高度非线性和强耦合性，常釆用全隐式方法进行求解，其中需要求解大规模、非对称、强耦合的雅可比方程组.
+          Krylov子空间方法,如广义最小残量法(GMRES)、双共轭梯度法(BiCGstab)等，是求解这类方程组的常用方法.
+          但直接应用这些方法一般收敛较慢，必须使用合适的预条件子来进行加速.
+          研究人员针对黑油模型的求解进行了大量尝试，并提出了很多求解算法:一类是基于矩阵分解的整体型预条件子,如ILU、嵌套分解等；另一类是多阶段预条件算法,如组合型预条件子、约束残量预条件子(CPR)等.
+          老一代油藏数值模拟器中常用矩阵分解型预条件子,但这类方法在求解大规模问题时速度较慢。本案例介绍了一种适用于超大规模精细油藏全隐式模拟的稳健、高效的雅可比方程求解算法。研究人员提出了一种分裂型预条件子，其中的左预条件子釆用工程界常用的ABF解耦方法，ABF方法能有效地减弱不同物理量之间的耦合关系，极大地改善雅可比矩阵的特征值分布。然后，根据
+          ABF
+          解耦后雅可比矩阵的特点,有针对性地设计了一种多阶段子空间校正右预条件子.
+          为了测试该分裂型预条件子的高效性和稳健性，研究人员在台式机上进行了数十万至千万网格节点算例的模拟计算，并通过一个实际油田模型验证了精细模拟的重大实际价值.
         </p>
-        <p>油藏多孔介质中的多相渗流一般包含油、气、水三相三组分流体的流动，在流动过程中会发生油气两相之间的质量交换.黑油模型给出了水、油、气三种组分的质量守恒方程:</p>
-
+        <p>
+          油藏多孔介质中的多相渗流一般包含油、气、水三相三组分流体的流动，在流动过程中会发生油气两相之间的质量交换.黑油模型给出了水、油、气三种组分的质量守恒方程:
+        </p>
         <div className="formulas-container">
           <div className="formula-item">
             <p>水相质量守恒方程：</p>
@@ -358,7 +400,6 @@ const Application = () => {
             <p>假设多孔介质中流体运动遵循达西定律：</p>
             <div className="formula-with-number">
               <img src={formula4} alt="公式4 - 达西定律"></img>
-
             </div>
           </div>
 
@@ -377,186 +418,410 @@ const Application = () => {
             </div>
           </div>
         </div>
-
-        <p>油藏数值模拟中边界条件分为外边界条件和内边界条件两大类，其中外边界条件指油藏流体在外边界所处的状态，内边界条件是指生产井或注入井所处的状态。外边界条件主要有给定油藏边界区域压力或者给定油藏区域边界流量两种，内边界条件则分为给定井产量(产油量或产液量)或者给定井筒底部压力。在实际问题中，内边界条件一般比较复杂并常随时间发生变化，在这里不加详述。</p>
-
-        <p>该案例只考虑采用全隐式方法对黑油模型方程(1.1)-(1.3)进行离散(Newton 线性化，时间上采用一阶向后欧拉格式，空间上采用网格块中心有限体积格式)，离散过程中将<img src={variable0} alt="J_RW" className="inline-math" />作为主变量。全隐式离散后所得到的雅克比线性代数系统如下：</p>
-
+        <p>
+          油藏数值模拟中边界条件分为外边界条件和内边界条件两大类，其中外边界条件指油藏流体在外边界所处的状态，内边界条件是指生产井或注入井所处的状态。外边界条件主要有给定油藏边界区域压力或者给定油藏区域边界流量两种，内边界条件则分为给定井产量(产油量或产液量)或者给定井筒底部压力。在实际问题中，内边界条件一般比较复杂并常随时间发生变化，在这里不加详述。
+        </p>
+        <p>
+          该案例只考虑采用全隐式方法对黑油模型方程(1.1)-(1.3)进行离散(Newton
+          线性化，时间上采用一阶向后欧拉格式，空间上采用网格块中心有限体积格式)，离散过程中将
+          <img src={variable0} alt="J_RW" className="inline-math" />
+          作为主变量。全隐式离散后所得到的雅克比线性代数系统如下：
+        </p>
         <div className="equation-container">
           <img src={formula7} alt="公式7 - 雅可比线性系统"></img>
           <span className="formula-number">(1.4)</span>
         </div>
-
-        <p>其中<img src={variable1} alt="J_RR" className="inline-math" />为模型方程对油藏变量的导数的系数，<img src={variable2} alt="J_RW" className="inline-math" />为油藏方程对井变量的导数，<img src={variable3} alt="J_WR" className="inline-math" />为井方程对油藏变量的导数的系数，<img src={variable4} alt="J_WW" className="inline-math" />为井方程对井变量的导数的系数。</p>
-
-        <p>一般来说，井方程和油藏方程的特点截然不同，将它们耦合在一起求解可能会破坏雅克比矩阵的一些性质，可以将(1.4)中井方程和油藏方程分开单独进行预条件，本案例只讨论油藏部分线性代数系统的求解。</p>
-
+        <p>
+          其中
+          <img src={variable1} alt="J_RR" className="inline-math" />
+          为模型方程对油藏变量的导数的系数，
+          <img src={variable2} alt="J_RW" className="inline-math" />
+          为油藏方程对井变量的导数，
+          <img src={variable3} alt="J_WR" className="inline-math" />
+          为井方程对油藏变量的导数的系数，
+          <img src={variable4} alt="J_WW" className="inline-math" />
+          为井方程对井变量的导数的系数。
+        </p>
+        <p>
+          一般来说，井方程和油藏方程的特点截然不同，将它们耦合在一起求解可能会破坏雅克比矩阵的一些性质，可以将(1.4)中井方程和油藏方程分开单独进行预条件，本案例只讨论油藏部分线性代数系统的求解。
+        </p>
         <h4>模型的快速求解算法</h4>
-
         <p>根据雅克比系统(1.4)，我们可以得到对应油藏变量的子系统</p>
-
         <div className="equation-container">
           <img src={formula8} alt="公式8 - 油藏变量子系统"></img>
           <span className="formula-number">(1.5)</span>
         </div>
-
-        <p>其中<img src={variable1} alt="J_RR" className="inline-math" />可展开成如下形式</p>
-
+        <p>
+          其中
+          <img src={variable1} alt="J_RR" className="inline-math" />
+          可展开成如下形式
+        </p>
         <div className="equation-container">
           <img src={formula9} alt="公式9 - J_RR展开形式"></img>
         </div>
-
-        <p>这里<img src={variable5} alt="J_PP" className="inline-math" />对应压力块，<img src={variable6} alt="J_S_aS_a" className="inline-math" />对应饱和度块，<img src={variable7} alt="J_P_aS_a" className="inline-math" />和<img src={variable8} alt="J_S_aP_a" className="inline-math" />对应着压力变量和饱和度变量间的耦合，<img src={formula10} alt="alpha=o,w" className="inline-math" />，为了讨论的方便，我们将油藏子系统(1.5)简记为</p>
-
+        <p>
+          这里
+          <img src={variable5} alt="J_PP" className="inline-math" />
+          对应压力块，
+          <img src={variable6} alt="J_S_aS_a" className="inline-math" />
+          对应饱和度块，
+          <img src={variable7} alt="J_P_aS_a" className="inline-math" />和
+          <img src={variable8} alt="J_S_aP_a" className="inline-math" />
+          对应着压力变量和饱和度变量间的耦合，
+          <img src={formula10} alt="alpha=o,w" className="inline-math" />
+          ，为了讨论的方便，我们将油藏子系统(1.5)简记为
+        </p>
         <div className="equation-container">
           <img src={formula11} alt="公式11 - 简化记法"></img>
           <span className="formula-number">(1.6)</span>
         </div>
-
-        <p>经全隐式离散得到的子系统的系数矩阵通常规模大、非对称性强、条件数坏。Krylov子空间方法(KSM)对这类问题一般收敛很慢，因此通常会先对线性代数系统做预条件处理，转而求解一个较容易求解的等价代数系统，理想的预条件方法能使预处理后的矩阵条件数远小于原矩阵的条件数或者使预处理后矩阵的特征值分布变集中，同时具备较低的算子复杂度及内存复杂度，我们将针对线性代数系统设计一种分裂型预条件子，即形为</p>
-
+        <p>
+          经全隐式离散得到的子系统的系数矩阵通常规模大、非对称性强、条件数坏。Krylov子空间方法(KSM)对这类问题一般收敛很慢，因此通常会先对线性代数系统做预条件处理，转而求解一个较容易求解的等价代数系统，理想的预条件方法能使预处理后的矩阵条件数远小于原矩阵的条件数或者使预处理后矩阵的特征值分布变集中，同时具备较低的算子复杂度及内存复杂度，我们将针对线性代数系统设计一种分裂型预条件子，即形为
+        </p>
         <div className="equation-container">
           <img src={formula12} alt="公式12 - 预条件代数系统"></img>
           <span className="formula-number">(1.7)</span>
         </div>
-
         <p>的预条件代数系统。</p>
-
-        <h5>左预条件子<img src={variable9} alt="P_L^{-1}" className="inline-math" />的构造</h5>
-
-        <p>在全隐式模拟中，<img src={variable10} alt="P_L^{-1}" className="inline-math" />通常可以弱化不同物理量之间的耦合关系，因此称之为解耦预条件子，块交错分解(ABF)方法最早由Bank等在1989年提出，用来削弱半导体模型中的漂移-扩散方程的物理变量间的耦合关系，1997年，Klie 将这种方法应用到油藏数值模拟中，方程(2.45)经ABF解耦预条件作用后，即</p>
-
+        <h5>
+          左预条件子
+          <img src={variable9} alt="P_L^{-1}" className="inline-math" />
+          的构造
+        </h5>
+        <p>
+          在全隐式模拟中，
+          <img src={variable10} alt="P_L^{-1}" className="inline-math" />
+          通常可以弱化不同物理量之间的耦合关系，因此称之为解耦预条件子，块交错分解(ABF)方法最早由Bank等在1989年提出，用来削弱半导体模型中的漂移-扩散方程的物理变量间的耦合关系，1997年，Klie
+          将这种方法应用到油藏数值模拟中，方程(2.45)经ABF解耦预条件作用后，即
+        </p>
         <div className="equation-container">
           <img src={formula13} alt="公式13 - ABF解耦后"></img>
           <p>或</p>
           <img src={formula14} alt="公式14 - ABF解耦后"></img>
         </div>
-
         <p>其中</p>
         <div className="equation-container">
           <img src={formula15} alt="公式15 - ABF解耦后"></img>
         </div>
-
-        <p>可以验证，<img src={variable11} alt="J_RR" className="inline-math" />中非对角块阵的对角元都为0，实际上也就是说，ABF方法削弱了压力和饱和度变量间的耦合关系。而且，数值实验发现ABF解耦对雅克比矩阵的特征值起到了很好的聚集作用——绝大多数特征值分布在1.0附近，这大大改善了KSM方法的收敛性。注意，上述形式的<img src={variable12} alt="P_L^{-1}" className="inline-math" />仅为了描述的方便，在代码实现过程中，自由度一般按照网格单元序来排列，经全隐式离散得到的雅克比矩阵<img src={variable13} alt="J_RR" className="inline-math" />的元素均是<img src={variable14} alt="J_RR" className="inline-math" />的子块，这时<img src={variable15} alt="J_RR" className="inline-math" />其中<img src={variable16} alt="J_RR" className="inline-math" />，<img src={variable17} alt="J_RR" className="inline-math" />为网格单元数。计算<img src={variable18} alt="J_RR" className="inline-math" />只需将每个<img src={variable19} alt="J_RR" className="inline-math" />子块单独求逆即可。</p>
-
-        <h5>右预条件子<img src={variable20} alt="P_R^{-1}" className="inline-math" />的构造</h5>
-
-        <p>模型方程(1.1)-(1.3)的不同物理变量具有不同的解析特性：压力方程表现出椭圆性，饱和度方程主要表现出双曲性。椭圆型方程通常体现的是一种全局性，而双曲型方程一般具有局部性，这使得雅克比矩阵的不同子块也具有不同的代数性质。因此，我们针对不同性质的方程分别采用对应的解法是一种比较合理的思路。</p>
-
-        <p>基于上述认识及子空间校正的思想，根据ABF预条件后得到的代数系统的特性(压力和饱和度变量局部解耦、饱和度变量之间也局部解耦)，我们首先在饱和度子空间用块高斯赛德尔(BGS)方法对饱和度方程进行一次近似求解，消除饱和度部分的高频误差部分。由于渗透率的强间断性导致压力方程是带强间断系数的椭圆方程，针对带间断系数的二阶椭圆型问题，Xu和Zhu从理论上证明了多层网格(MG)预条件的共轴梯度法的一致收敛性，即收敛速度与网格尺寸及系数跳跃的大小都无关，而直接应用MG作为迭代法却没有一致收敛性。受此启发，我们采用代数多层网格(AMG)预条件GMRES方法来近似求解上述压力方程代数系统。最后，我们在全空间再进行一次全局BGS求解。上述三阶段子空间校正方法的算法如下：</p>
-
+        <p>
+          可以验证，
+          <img src={variable11} alt="J_RR" className="inline-math" />
+          中非对角块阵的对角元都为0，实际上也就是说，ABF方法削弱了压力和饱和度变量间的耦合关系。而且，数值实验发现ABF解耦对雅克比矩阵的特征值起到了很好的聚集作用——绝大多数特征值分布在1.0附近，这大大改善了KSM方法的收敛性。注意，上述形式的
+          <img src={variable12} alt="P_L^{-1}" className="inline-math" />
+          仅为了描述的方便，在代码实现过程中，自由度一般按照网格单元序来排列，经全隐式离散得到的雅克比矩阵
+          <img src={variable13} alt="J_RR" className="inline-math" />
+          的元素均是
+          <img src={variable14} alt="J_RR" className="inline-math" />
+          的子块，这时
+          <img src={variable15} alt="J_RR" className="inline-math" />
+          其中
+          <img src={variable16} alt="J_RR" className="inline-math" />，
+          <img src={variable17} alt="J_RR" className="inline-math" />
+          为网格单元数。计算
+          <img src={variable18} alt="J_RR" className="inline-math" />
+          只需将每个
+          <img src={variable19} alt="J_RR" className="inline-math" />
+          子块单独求逆即可。
+        </p>
+        <h5>
+          右预条件子
+          <img src={variable20} alt="P_R^{-1}" className="inline-math" />
+          的构造
+        </h5>
+        <p>
+          模型方程(1.1)-(1.3)的不同物理变量具有不同的解析特性：压力方程表现出椭圆性，饱和度方程主要表现出双曲性。椭圆型方程通常体现的是一种全局性，而双曲型方程一般具有局部性，这使得雅克比矩阵的不同子块也具有不同的代数性质。因此，我们针对不同性质的方程分别采用对应的解法是一种比较合理的思路。
+        </p>
+        <p>
+          基于上述认识及子空间校正的思想，根据ABF预条件后得到的代数系统的特性(压力和饱和度变量局部解耦、饱和度变量之间也局部解耦)，我们首先在饱和度子空间用块高斯赛德尔(BGS)方法对饱和度方程进行一次近似求解，消除饱和度部分的高频误差部分。由于渗透率的强间断性导致压力方程是带强间断系数的椭圆方程，针对带间断系数的二阶椭圆型问题，Xu和Zhu从理论上证明了多层网格(MG)预条件的共轴梯度法的一致收敛性，即收敛速度与网格尺寸及系数跳跃的大小都无关，而直接应用MG作为迭代法却没有一致收敛性。受此启发，我们采用代数多层网格(AMG)预条件GMRES方法来近似求解上述压力方程代数系统。最后，我们在全空间再进行一次全局BGS求解。上述三阶段子空间校正方法的算法如下：
+        </p>
         <ol className="algorithm-steps">
           <li>对饱和度方程进行一次(块)高斯磨光;</li>
           <li>利用 AMG 预条件 GMRES 方法对压力方程进行求解至一个固定精度;</li>
           <li>对雅可比方程进行一次整体块高斯磨光.</li>
         </ol>
-
-        <p>在Step1和Step3中，我们采用顺风排序来提高BGS的稳定性。由于油藏中的流体是从压力高的网格单元流向压力低的单元，我们按照前一时间层计算出来的压力值大小，对磨光进行排序。在该序下，饱和度矩阵接近下三角阵，BGS可变得更加高效。在Step2中，为了减少内存使用量并降低算法的计算复杂度，将GMRES最大迭代次数设为一个较小的值，在案例的所有数值实验中我们将其设为15，且将压力方程的相对残量范数降到0.1时即停止。由于Step2中使用的AMG预条件GMRES方法是一个迭代法，所以多阶段预条件方法(算法1)是非线性的，因此外层迭代使用Flexible GMRES方法。针对目前油藏数值模拟主要在PC机或台式工作站环境上完成的现状，由于GMRES类方法的内存消耗量基本由重启回头数(restart number)决定，所以采用动态重启技术减少内存使用量。</p>
-
+        <p>
+          在Step1和Step3中，我们采用顺风排序来提高BGS的稳定性。由于油藏中的流体是从压力高的网格单元流向压力低的单元，我们按照前一时间层计算出来的压力值大小，对磨光进行排序。在该序下，饱和度矩阵接近下三角阵，BGS可变得更加高效。在Step2中，为了减少内存使用量并降低算法的计算复杂度，将GMRES最大迭代次数设为一个较小的值，在案例的所有数值实验中我们将其设为15，且将压力方程的相对残量范数降到0.1时即停止。由于Step2中使用的AMG预条件GMRES方法是一个迭代法，所以多阶段预条件方法(算法1)是非线性的，因此外层迭代使用Flexible
+          GMRES方法。针对目前油藏数值模拟主要在PC机或台式工作站环境上完成的现状，由于GMRES类方法的内存消耗量基本由重启回头数(restart
+          number)决定，所以采用动态重启技术减少内存使用量。
+        </p>
         <h5>2.2.3.2 压裂液滤失系数模型</h5>
-
-        <p>水力压裂（Hydraulic fracturing）是人们利用地面高压泵组，以超过地层吸收能力的排量将高粘压裂液泵入井内而在井内憋起高压，当该压力克服井壁附近地应力并达到岩石抗张强度，就在地层产生裂缝。继续注入带有支撑剂的混砂液，使裂缝继续延伸并在其中充填支撑剂。停泵后，由于支撑剂对裂缝的支撑作用，在地层中形成足够长的、有一定导流能力的填砂裂缝，从而实现油气井增产和注水井增注。</p>
-
-        <p>在压裂中，压裂液沿裂缝向地层滤失。一般认为，这种滤失受三种机理的控制即滤液粘度、地层流体的压缩性和压裂液的造壁性。压裂液滤失量的多少常以滤失系数的大小来表示。在计算受地层流体压缩性控制的滤失系数时，可导出下面的方程：</p>
-
+        <p>
+          水力压裂（Hydraulic
+          fracturing）是人们利用地面高压泵组，以超过地层吸收能力的排量将高粘压裂液泵入井内而在井内憋起高压，当该压力克服井壁附近地应力并达到岩石抗张强度，就在地层产生裂缝。继续注入带有支撑剂的混砂液，使裂缝继续延伸并在其中充填支撑剂。停泵后，由于支撑剂对裂缝的支撑作用，在地层中形成足够长的、有一定导流能力的填砂裂缝，从而实现油气井增产和注水井增注。
+        </p>
+        <p>
+          在压裂中，压裂液沿裂缝向地层滤失。一般认为，这种滤失受三种机理的控制即滤液粘度、地层流体的压缩性和压裂液的造壁性。压裂液滤失量的多少常以滤失系数的大小来表示。在计算受地层流体压缩性控制的滤失系数时，可导出下面的方程：
+        </p>
         <div className="equation-container">
           <img src={formula16} alt="公式16 - 压裂液滤失系数模型"></img>
           <span className="formula-number">(2.1)</span>
         </div>
-
-        <p><img src={variable21} alt="p(x,t)" className="inline-math" />为点x在t时刻的压力，<img src={variable22} alt="p_i" className="inline-math" />为原始地层压力，<img src={variable23} alt="η" className="inline-math" />为地层扩散系数。</p>
-
+        <p>
+          <img src={variable21} alt="p(x,t)" className="inline-math" />
+          为点x在t时刻的压力，
+          <img src={variable22} alt="p_i" className="inline-math" />
+          为原始地层压力，
+          <img src={variable23} alt="η" className="inline-math" />
+          为地层扩散系数。
+        </p>
         <p>利用拉普拉斯变换可以求得该问题的精确解是：</p>
-
         <div className="equation-container">
           <img src={formula17} alt="公式17 - 拉普拉斯变换解"></img>
           <img src={formula18} alt="公式18 - 拉普拉斯变换解"></img>
           <span className="formula-number">(2.2)</span>
         </div>
-
-        <p>其中<img src={variable24} alt="erfc(x)" className="inline-math" />为余误差函数，<img src={variable25} alt="erf(x)" className="inline-math" />为误差函数：</p>
-
+        <p>
+          其中
+          <img src={variable24} alt="erfc(x)" className="inline-math" />
+          为余误差函数，
+          <img src={variable25} alt="erf(x)" className="inline-math" />
+          为误差函数：
+        </p>
         <div className="equation-container">
           <img src={formula19} alt="公式19 - 误差函数定义"></img>
           <span className="formula-number">(2.3)</span>
         </div>
-
         <h5>2.2.3.3 单相渗流的连续性方程</h5>
-
-        <p>油气渗流必须遵循质量守恒定律（又称连续性原理）。该原理可表述为：对于地层中无源无汇的微小单元体，在其封闭表面内流体质量的变化量等于给定时间间隔内流入与流出该封闭表面的流体质量之差。根据这一原理建立的方程称为质量守恒方程或连续性方程。</p>
-
+        <p>
+          油气渗流必须遵循质量守恒定律（又称连续性原理）。该原理可表述为：对于地层中无源无汇的微小单元体，在其封闭表面内流体质量的变化量等于给定时间间隔内流入与流出该封闭表面的流体质量之差。根据这一原理建立的方程称为质量守恒方程或连续性方程。
+        </p>
         {/* <p>连续性方程表达了运动要素（速度、密度、饱和度、浓度等）与时间和坐标变化的关系。</p> */}
-
         {/* <p>采用微分单元分析法建立质量守恒方程。在地层中取一微小六面体单元，设单元体内<img src={variable23} alt="M(x,y,z)" className="inline-math" />点处沿各坐标轴的质量速度分量分别为<img src={variable24} alt="ρv_x" className="inline-math" />、<img src={variable25} alt="ρv_y" className="inline-math" />、<img src={variable21} alt="ρv_z" className="inline-math" />。</p> */}
         <p>
           连续性方程的表现形式是给出运动要素（速度、密度、饱和度、浓度）随时间和坐标变化关系.
         </p>
-
         <div className="equation-container">
           <img src={formula20} alt="公式20 - 连续性方程"></img>
           {/* <span className="formula-number">(2.4)</span> */}
         </div>
-        <p>下面利用微元分析法来建立质量守恒方程.在地层中取微小六面体单元，单元体中<img src={variable26} alt="M(x,y,z)" className="inline-math" /><img src={variable27} alt="M(x,y,z)" className="inline-math" />点质量速度在各坐标轴上分量为<img src={variable28} alt="ρv_x" className="inline-math" />、<img src={variable29} alt="ρv_y" className="inline-math" />、<img src={variable30} alt="ρv_z" className="inline-math" />.</p>
-
-        <p>注意到点<img src={variable31} alt="M'" className="inline-math" /> <img src={variable32} alt="(x - dx/2, y, z)" className="inline-math" />，点<img src={variable33} alt="M''" className="inline-math" /> <img src={variable34} alt="(x + dx/2, y, z)" className="inline-math" />，</p>
-
-        <p>故点<img src={variable31} alt="M'" className="inline-math" />的质量速度为</p>
-
+        <p>
+          下面利用微元分析法来建立质量守恒方程.在地层中取微小六面体单元，单元体中
+          <img src={variable26} alt="M(x,y,z)" className="inline-math" />
+          <img src={variable27} alt="M(x,y,z)" className="inline-math" />
+          点质量速度在各坐标轴上分量为
+          <img src={variable28} alt="ρv_x" className="inline-math" />、
+          <img src={variable29} alt="ρv_y" className="inline-math" />、
+          <img src={variable30} alt="ρv_z" className="inline-math" />.
+        </p>
+        <p>
+          注意到点
+          <img src={variable31} alt="M'" className="inline-math" />{" "}
+          <img
+            src={variable32}
+            alt="(x - dx/2, y, z)"
+            className="inline-math"
+          />
+          ，点
+          <img src={variable33} alt="M''" className="inline-math" />{" "}
+          <img
+            src={variable34}
+            alt="(x + dx/2, y, z)"
+            className="inline-math"
+          />
+          ，
+        </p>
+        <p>
+          故点
+          <img src={variable31} alt="M'" className="inline-math" />
+          的质量速度为
+        </p>
         <div className="equation-container">
           <img src={formula21} alt="公式21 - M'点质量速度"></img>
         </div>
-
-        <p>点<img src={variable33} alt="M''" className="inline-math" />的质量速度为</p>
-
+        <p>
+          点<img src={variable33} alt="M''" className="inline-math" />
+          的质量速度为
+        </p>
         <div className="equation-container">
           <img src={formula22} alt="公式22 - M''点质量速度"></img>
         </div>
-
-        <p>从而在<img src={variable35} alt="dt" className="inline-math" />时间内，沿<img src={variable36} alt="x" className="inline-math" />方向流入和流出单元体内的流体质量分别为</p>
-
+        <p>
+          从而在
+          <img src={variable35} alt="dt" className="inline-math" />
+          时间内，沿
+          <img src={variable36} alt="x" className="inline-math" />
+          方向流入和流出单元体内的流体质量分别为
+        </p>
         <div className="equation-container">
           <img src={formula23} alt="公式23 - x方向流入质量"></img>
         </div>
-
         <p>和</p>
-
         <div className="equation-container">
           <img src={formula24} alt="公式24 - x方向流出质量"></img>
         </div>
-
-        <p>从而在<img src={variable35} alt="dt" className="inline-math" />时间内，沿<img src={variable36} alt="x" className="inline-math" />方向流入和流出的流体质量差为</p>
-
+        <p>
+          从而在
+          <img src={variable35} alt="dt" className="inline-math" />
+          时间内，沿
+          <img src={variable36} alt="x" className="inline-math" />
+          方向流入和流出的流体质量差为
+        </p>
         <div className="equation-container">
           <img src={formula25} alt="公式25 - x方向质量差"></img>
         </div>
-
-        <p>同理在<img src={variable35} alt="dt" className="inline-math" />时间内，沿<img src={variable37} alt="y" className="inline-math" />、<img src={variable38} alt="z" className="inline-math" />方向流入和流出的流体质量差为</p>
-
+        <p>
+          同理在
+          <img src={variable35} alt="dt" className="inline-math" />
+          时间内，沿
+          <img src={variable37} alt="y" className="inline-math" />、
+          <img src={variable38} alt="z" className="inline-math" />
+          方向流入和流出的流体质量差为
+        </p>
         <div className="equation-container">
           <img src={formula26} alt="公式26 - y方向质量差"></img>
         </div>
-
         <p>和</p>
-
         <div className="equation-container">
           <img src={formula27} alt="公式27 - z方向质量差"></img>
         </div>
-
-        <p>在<img src={variable35} alt="dt" className="inline-math" />时间内，六面体内流入和流出的总的流体质量差为</p>
-
+        <p>
+          在<img src={variable35} alt="dt" className="inline-math" />
+          时间内，六面体内流入和流出的总的流体质量差为
+        </p>
         <div className="equation-container">
-          <img src={formula28} alt="公式28 - 总质量差"></img><img src={formula29} alt="公式29 - 孔隙体积"></img><img src={formula30} alt="公式30 - 流体质量"></img>
+          <img src={formula28} alt="公式28 - 总质量差"></img>
+          <img src={formula29} alt="公式29 - 孔隙体积"></img>
+          <img src={formula30} alt="公式30 - 流体质量"></img>
         </div>
-
-        <p>经过六面体流入和流出的质量之所以会不一样，是因为在六面体内岩石和液体弹性能量的作用下，释放或储存一部分质量的结果（岩石的弹性表现为孔隙度的变化，液体弹性表现为液体密度的变化）。六面体内的质量变化应为：</p>
-
-        <p>六面体内的孔隙体积：<img src={variable38} alt="φdxdydz" className="inline-math" /></p>
-
+        <p>
+          经过六面体流入和流出的质量之所以会不一样，是因为在六面体内岩石和液体弹性能量的作用下，释放或储存一部分质量的结果（岩石的弹性表现为孔隙度的变化，液体弹性表现为液体密度的变化）。六面体内的质量变化应为：
+        </p>
+        <p>
+          六面体内的孔隙体积：
+          <img src={variable38} alt="φdxdydz" className="inline-math" />
+        </p>
         {/* <div className="equation-container">
           <img src={formula30} alt="公式30 - 流体质量"></img>
         </div> */}
-
-
+        {/* 。。。。。。。。55页开始。。。。。。。。 */}
+        <h3>钻头选型方法</h3>
+        <p>
+          近年来，国内外许多学者以利用测井资料计算岩石力学参数这一思想为基础，提出了许多新的方法来求取岩石的可钻性和其它的力学参数.其过程如图4-2所示.
+        </p>
+        <div className="image-container">
+          <img src={z1}></img>
+          <p>图4-2 声波时差法</p>
+          <img src={z2}></img>
+          <p>图4-3 钻头选型指标体系</p>
+        </div>
+        <p>
+          根据调研的情况，结合锦58区具体的井史数据、录井数据、测井数据，并利用相关系数分析法、灰色关联度分析法建立的指标体系如下图4-3.
+        </p>
+        <h3>实例应用</h3>
+        <p>
+          本研究以某一段井深为例做钻头选型分析。首先根据地质信息表中的岩性描述，我们选取浅棕灰色细砂岩、棕红色泥岩、棕褐色泥岩三个关键词对数据进行筛选，筛选的结果如图4-4所示，其表示共有299个层位含有这些关键词，然后我们统计了各个层位中含有关键词的数量，柱状图如下所示，可以看出这些层位集中在2800-3200米.由于是在一个地层中对钻头进行优选，因此可以不考虑地层因素.
+        </p>
+        <div className="image-container">
+          <img src={z3}></img>
+          <p>图4-4 筛选结果</p>
+          <p>表4-2 钻头分类</p>
+          {/* 到底怎么做表格啊，新开了一个表格js 还是不行 */}
+          <biaoge1 />
+          <img src={bg1}></img>
+        </div>
+        <p>
+          根据井史中的钻头数据可知，在2800-3200米的地层中，钻头直径有152、152.4、215、215.9、222、222.2、222.22、222.25、222.3、223.3共10种，如下表所示，我们按钻头直径的规格将钻头分为3类进行钻头优选.
+        </p>
+        <p>
+          在其它钻进条件保持不变的情况下，钻压与钻速的典型关系曲线如图4-5所示.在钻压和其它钻井参数保持不变的条件下，转速与钻速的关系曲线如图4-6所示，同时钻速随着排量和立管压力的增大也增大.因此，我们将钻压、转速、排量这些变量取倒数后带入模型.
+        </p>
+        <div className="image-container">
+          <img src={z4}></img>
+          <p>图4-5 钻压与钻速的关系曲线 </p>
+          <img src={z5}></img>
+          <p>图4-6 转速与钻速的关系曲线</p>
+        </div>
+        <p>
+          本研究选取了有关的多个指标，包括：井深、钻压、转速、排量、进尺、钻速几个指标来计算.原始数据见表4-3.
+        </p>
+        <div className="image-container">
+          <p>表4-3 主因子分析原始数据表</p>
+          <img src={bg2}></img>
+        </div>
+        <p>通过主因子分析可以得到下面的相关矩阵:</p>
+        <div className="image-container">
+          <p>表4-4 相关性矩阵</p>
+          <img src={bg3}></img>
+        </div>
+        <p>
+          表4-4为6个原始变量之间的相关系数矩阵，可见许多变量之间直接的相关性比较强，的确存在信息上的重复.
+        </p>
+        <div className="image-container">
+          <p>表4-5 总方差解释</p>
+          <img src={bg4}></img>
+        </div>
+        <p>
+          表4-5给出的是各成分的方差贡献率和累计贡献率，由表4-4可知，只有第一个特征根大于1，因此只提取了一个主成分，这个主成分的方差所占所有主成分方差的72.246%，足够描述钻头的选取.
+        </p>
+        <div className="image-container">
+          <p>表4-6 成分矩阵</p>
+          <img src={bg5}></img>
+        </div>
+        <p>
+          表4-6中的输出为主成分系数矩阵，可以说明各主成分在各变量上的载荷，从而得出主成分的表达式，注意在表达式中各变量已经不是原始变量，而是标准化变量.
+        </p>
+        <div className="equation-container">
+          <img src={f1}></img>
+        </div>
+        <div className="image-container">
+          <p>表4-7 主因子计算结果</p>
+          <img src={bg6}></img>
+        </div>
+        <p>由表4-7可知，钻头的使用效果依次由高到低.</p>
+        <h5>2.2.3.7 储层参数确定建模</h5>
+        <p>
+          储层的孔隙度、含水饱和度等参数是用于对储层的油气存储能力和油气储量进行评价的重要参数，因而储层参数的定量预测是一个迫切需要解决的问题.由于现场所采集的数据中蕴藏着丰富的地质信息，所以研究人员通常会利用所采集的数据对这些储层参数进行预测.
+        </p>
+        <h3>问题的提出与分析</h3>
+        <p>
+          在实际工程问题中，往往需要根据一定的采样数据去拟合真实的自然变化规律，如根据井分层点拟合构造层面的空间形态.已知通过钻井获知的8个井点位置构造深度、孔隙度值等，试应用一种插值方法建立储层参数确定模型，通过井点值预测构造层面其他位置的高程.
+        </p>
+        <p>
+          解决这一类问题就是要对离散的数据建立一个连续的数学模型，通过函数逼近的方式，构建一个插值函数去近似代替一个复杂的或未知解析表达式的函数.构建插值函数的一般方法是在某个函数空间
+          <img src={v1} className="inline-math"></img>中，选取若干个函数
+          <img src={v2} className="inline-math"></img>，用线性组合
+          <img src={v3} className="inline-math"></img>
+          作为插值函数.其中，<img src={v4} className="inline-math"></img>
+          称为基函数.若用基函数
+          <img src={v5} className="inline-math"></img>
+          的线性组合，可构建插值函数：
+        </p>
+        <div className="equation-container">
+          <img src={f2}></img>
+        </div>
+        <p>插值函数为代数多项式，称为代数插值.</p>
+        <p>
+          常规数理统计方法很多，如三角网插值法、距离反比加权法、径向基函数插值法、多重网格逼近法、离散光滑插值法、样条插值法、最近邻点法、移动最小二乘法等.在储层建模中，应用该类方法的前提是地质参数在井间具有数理统计关系(即某种数学函数关系).如三角网方法的前提是井间参数值是井孔参数与井间距离的线性函数，应用这一函数关系，即可对多井井间(二维剖面、二维平面及三维空间)进行储层参数插值，并建立储层地质模型.
+        </p>
+        <p>
+          径向基函数插值即是通过以空间距离为基本变量的基函数构建插值函数进行插值.径向基函数插值法原理简单，采用不同性质的径向基函数可构建出不同特性的径向基插值函数；同时，径向基函数插值方法对已知点的分布要求较高，一般要求已知数据点分布均匀且稀疏程度适中.
+        </p>
+        <h3>模型的建立与求解</h3>
+        <p>
+          如图5-4所示，图中存在8个已知点，令插值基函数为，
+          <img src={v11} className="inline-math"></img>,插值函数形如：
+        </p>
+        <div className="equation-container">
+          <img src={f3}></img>
+        </div>
+        <p>
+          式中<img src={v6} className="inline-math"></img>
+          ——插值点到8个已知点的径向距离；{" "}
+        </p>
+        <p>
+          <img src={v7} className="inline-math"></img>
+          为插值基函数，——径向基函数；
+        </p>
+        <p>
+          <img src={v8} className="inline-math"></img>——各基函数系数；
+        </p>
+        <p>
+          <img src={v9} className="inline-math"></img>
+          ——已知点值，如井点处构造深度、孔隙度值等；
+        </p>
+        <p>
+          <img src={v10} className="inline-math"></img>——任一点的插值结果.
+        </p>
       </div>
     </div>
   );
