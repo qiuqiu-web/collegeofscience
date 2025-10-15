@@ -131,7 +131,7 @@ import formula27 from "../images/公式27.png";
 import formula28 from "../images/公式28.png";
 import formula29 from "../images/公式29.png";
 import formula30 from "../images/公式30.png";
-
+import y1 from "../images/图1.png";
 //钻头相关图片
 import bg1 from "../images/表格1.png";
 import bg2 from "../images/表格2.png";
@@ -190,6 +190,99 @@ import x14 from "../images/x14.png";
 import p14 from "../images/p14.png";
 import p15 from "../images/p15.png";
 import p16 from "../images/p16.png";
+import x15 from "../images/x15.png";
+import x16 from "../images/x16.png";
+import x17 from "../images/x17.png";
+import x18 from "../images/x18.png";
+import x19 from "../images/x19.png";
+import x20 from "../images/x20.png";
+import x21 from "../images/x21.png";
+import p17 from "../images/p17.png";
+import p18 from "../images/p18.png";
+import p19 from "../images/p19.png";
+import p20 from "../images/p20.png";
+import p21 from "../images/p21.png";
+import p22 from "../images/p22.png";
+import p23 from "../images/p23.png";
+import p24 from "../images/p24.png";
+import p25 from "../images/p25.png";
+import p26 from "../images/p26.png";
+import p27 from "../images/p27.png";
+import x22 from "../images/x22.png";
+import x23 from "../images/x23.png";
+import x24 from "../images/x24.png";
+import x25 from "../images/x25.png";
+import x26 from "../images/x26.png";
+import x27 from "../images/x27.png";
+import x28 from "../images/x28.png";
+import x29 from "../images/x29.png";
+import x30 from "../images/x30.png";
+import x31 from "../images/x31.png";
+import x32 from "../images/x32.png";
+import x33 from "../images/x33.png";
+import x34 from "../images/x34.png";
+import x35 from "../images/x35.png";
+import x36 from "../images/x36.png";
+import x37 from "../images/x37.png";
+// import x38 from "../images/x38.png";
+// import x39 from "../images/x39.png";
+// import x40 from "../images/x40.png";
+// import x41 from "../images/x41.png";
+// import x42 from "../images/x42.png";
+// import x43 from "../images/x43.png";
+// import x44 from "../images/x44.png";
+// import x45 from "../images/x45.png";
+// import x46 from "../images/x46.png";
+// import x47 from "../images/x47.png";
+import p28 from "../images/p28.png";
+import p29 from "../images/p29.png";
+import p30 from "../images/p30.png";
+import p31 from "../images/p31.png";
+import p32 from "../images/p32.png";
+import p33 from "../images/p33.png";
+import p34 from "../images/p34.png";
+import p35 from "../images/p35.png";
+import p36 from "../images/p36.png";
+import p37 from "../images/p37.png";
+import p38 from "../images/p38.png";
+import p39 from "../images/p39.png";
+import p40 from "../images/p40.png";
+import p411 from "../images/p41(1).png";
+import p412 from "../images/p41（2）.png";
+import p42 from "../images/p42.png";
+import p43 from "../images/p43.png";
+import p44 from "../images/p44.png";
+import p45 from "../images/p45.png";
+import p46 from "../images/p46.png";
+import p47 from "../images/p47.png";
+import p48 from "../images/p48.png";
+import p49 from "../images/p49.png";
+import p50 from "../images/p50.png";
+import p51 from "../images/p51.png";
+import p52 from "../images/p52.png";
+import p53 from "../images/p53.png";
+import p54 from "../images/p54.png";
+import p55 from "../images/p55.png";
+import p56 from "../images/p56.png";
+import p57 from "../images/p57.png";
+import p58 from "../images/p58.png";
+import p59 from "../images/p59.png";
+// import x37 from "../images/x37.png";
+import x38 from "../images/x38.png";
+import x39 from "../images/x39.png";
+import x40 from "../images/x40.png";
+import x41 from "../images/x41.png";
+import x42 from "../images/x42.png";
+import x43 from "../images/x43.png";
+import x44 from "../images/x44.png";
+import x45 from "../images/x45.png";
+import p60 from "../images/p60.png";
+import p61 from "../images/p61.png";
+import p62 from "../images/p62.png";
+import p63 from "../images/p63.png";
+import p64 from "../images/p64.png";
+import p65 from "../images/p65.png";
+import p66 from "../images/p66.png";
 
 const Application = () => {
   return (
@@ -1011,6 +1104,309 @@ const Application = () => {
         <p>
           <img src={v10} className="inline-math"></img>——任一点的插值结果.
         </p>
+        <div className="image-container">
+          <img src={y1}></img>
+          <p>图 5-4 插值点到已知点的径向距离</p>
+        </div>
+
+        <p>
+          因此，径向基函数可以看作中心位于特定点（各个插值点）并以空间距离r为基本变量的各向同性的函数。下面为常用的全域径向基函数：
+        </p>
+
+        <p>
+          <strong>线性函数：</strong><img src={x15} alt="φ(r) = r" className="inline-math" />
+        </p>
+
+        <p>
+          <strong>三次方函数：</strong><img src={x16} alt="φ(r) = r³" className="inline-math" />
+        </p>
+
+        <p>
+          <strong>Kriging 方法的 Gauss 分布函数：</strong><img src={x17} alt="φ(r) = e^(-r²/δ²)" className="inline-math" />
+        </p>
+
+        <p>
+          <strong>Hady 的多重二次径向基函数：</strong><img src={x18} alt="φ(r) = √(c² + r²)" className="inline-math" />（<img src={p17} alt="c² = 0.815π/4η" className="inline-math" />）
+        </p>
+
+        <p>
+          <strong>Duchon 的薄板样条函数：</strong><img src={x19} alt="φ(r) = r² lnr" className="inline-math" />
+        </p>
+
+        <p>
+          径向基函数插值函数可表示为
+        </p>
+
+        <div className="equation-container">
+          <img src={x20} alt="径向基函数插值函数"></img>
+        </div>
+
+        <p>
+          式中<img src={p17} alt="n" className="inline-math" />——已知点个数；
+        </p>
+
+        <p>
+          <img src={p18} alt="x_i" className="inline-math" />——各已知点坐标；
+        </p>
+
+        <p>
+          <img src={p19} alt="||x - x_i||" className="inline-math" />——径向基函数；
+        </p>
+
+        <p>
+          <img src={p20} alt="c_i" className="inline-math" />——基函数的权重；
+        </p>
+
+        <p>
+          <img src={p21} alt="y_i" className="inline-math" />——已知点值。
+        </p>
+
+        <p>
+          插值函数中各已知点径向基函数的权重<img src={p20} alt="c_i" className="inline-math" />可通过已知点建立的线性方程组求解：
+        </p>
+
+        <div className="equation-container">
+          <img src={x21} alt="线性方程组矩阵形式"></img>
+        </div>
+
+        <p>
+          求解此方程组即可得到<img src={p22} alt="c_i" className="inline-math" />，从而得到<img src={p23} alt="f(x)" className="inline-math" />的表达式，最终逐次将各未知点代入<img src={p23} alt="f(x)" className="inline-math" />，即可求取各未知点处的估计值。
+        </p>
+
+        <h5>2.2.3.8 多层叠置煤层压裂裂缝纵向扩展模型与数值模拟</h5>
+
+        <p>
+          水力压裂技术是高效开发多层叠置煤层的一种方式.在多层叠置煤层中，各层地应力、岩石力学性质等都存在差异，而这些差异会对水力裂缝纵向扩展产生较大影响.因此本小结案例针对多层叠置煤层中水力裂缝纵向延伸问题，基于孔弹性理论和损伤力学建立了多层叠置煤层压裂裂缝纵向扩展模型.物理实验表明，水力裂缝纵向扩展受层间应力差、弹性模量、界面强度、压裂液黏度等因素的影响，其中层间应力差为主要影响因素.
+        </p>
+        <p>目前常用的裂缝纵向扩展数值模拟方法有边界元法、有限差分法、位移不连续法、有限元法和扩展有限元法.这些方法在模拟裂缝延伸时需要预设裂缝扩展步长，且需要建立相交准则来判断裂缝扩展至界面后的延伸方向.而基于损伤力学建立的裂缝延伸模型则不需要预先设定裂缝延伸方向和相交准则，在处理裂缝延伸问题时不需要额外的规则来描述裂缝界面，裂缝延伸后不需要重新剖分网格.该案例基于损伤力学建立了水力压裂裂缝纵向扩展流固耦合计算模型，基于该模型模拟多层叠置煤层中水力裂缝纵向延伸规律，分析多层叠置煤层压裂缝高的影响因素.</p>
+
+        <h5>模型的建立</h5>
+
+        <h5>(1)损伤演化模型</h5>
+
+        <p>
+          当材料受到单轴拉伸时可以将其损伤演化法则表示为：
+        </p>
+
+        <div className="equation-container">
+          <img src={x22} alt="损伤演化模型公式"></img>
+          (8.39)
+        </div>
+
+        <p>
+          其中，<img src={p24} alt="D" className="inline-math" />为损伤变量；<img src={p25} alt="ε_c" className="inline-math" />为临界应变（材料开始破坏时的应变）；<img src={p26} alt="A_r" className="inline-math" />为材料拉伸系数；<img src={p27} alt="B_r" className="inline-math" />为材料拉伸系数。
+        </p>
+
+        <h5>(2)控制方程</h5>
+
+        <p>
+          若忽略惯性力和体积力的影响，将饱和流体的多孔介质视为线弹性材料，则多孔弹性岩石的控制方程为：
+        </p>
+
+        <h5>1) 应力平衡方程：</h5>
+
+        <div className="equation-container">
+          <img src={x23} alt="应力平衡方程"></img>
+          (8.40)
+        </div>
+
+        <p>
+          其中，<img src={p28} alt="σ" className="inline-math" />是总应力张量，<img src={p29} alt="Pa" className="inline-math" />。
+        </p>
+
+        <p>
+          对于完全饱和的多孔介质，根据孔弹性力学理论，总应力<img src={p30} alt="σ" className="inline-math" />和有效应力<img src={p29} alt="σ_eff" className="inline-math" />以及孔隙流体压力<img src={p31} alt="P" className="inline-math" />之间的关系可以表示为：
+        </p>
+
+        <div className="equation-container">
+          <img src={x24} alt="应力关系方程"></img>
+          (8.41)
+        </div>
+
+        <p>
+          其中，<img src={p32} alt="I" className="inline-math" />为单位张量，二维情况下为<img src={p33} alt="[1 1 0]^T" className="inline-math" />；<img src={p34} alt="α(D)" className="inline-math" />为Biot孔弹性系数，其随岩石损伤演化而变化，如式(8.42)所示。
+        </p>
+
+        <div className="equation-container">
+          <img src={x25} alt="Biot孔弹性系数"></img>
+          (8.42)
+        </div>
+
+        <p>
+          其中，<img src={p35} alt="K_D" className="inline-math" />为多孔介质受损后的体积模量，MPa；<img src={p37} alt="K_s" className="inline-math" />为骨架颗粒的体积模量，MPa。
+        </p>
+
+        <p>
+          将式(8.41)代入式(8.40)可得应力平衡方程：
+        </p>
+
+        <div className="equation-container">
+          <img src={x26} alt="修正应力平衡方程"></img>
+          (8.43)
+        </div>
+
+        <p>
+          式(8.43)对应的边界条件如下：
+        </p>
+
+        <div className="equation-container">
+          <img src={x27} alt="边界条件"></img>
+          (8.44)
+        </div>
+
+        <p>
+          其中，<img src={p38} alt="∂Ω^u" className="inline-math" />为位移场Dirichlet边界，<img src={p39} alt="∂Ω^t" className="inline-math" />为位移场Neumann边界。求解域的各边界满足如下关系：
+        </p>
+
+        <div className="equation-container">
+          <img src={x28} alt="边界关系"></img>
+          (8.45)
+        </div>
+
+        <h5>2) 流体连续性方程</h5>
+
+        <div className="equation-container">
+          <img src={x29} alt="流体连续性方程"></img>
+          (8.46)
+        </div>
+
+        <p>
+          其中，<img src={p40} alt="ζ" className="inline-math" />为流体体积增量，m³；<img src={p411} alt="v" className="inline-math" /><img src={p412} alt="i" className="inline-math" />为流体流速，<img src={p42} alt="m³/s" className="inline-math" />。
+        </p>
+
+        <p>
+          假设流体流动符合Darcy定律，则流体体积增量和流速可表示为：
+        </p>
+
+        <div className="equation-container">
+          <img src={x30} alt="Darcy定律流体体积增量"></img>
+          (8.47)
+        </div>
+        <div className="equation-container">
+          <img src={x31} alt="Darcy定律流体体积增量"></img>
+          (8.48)
+        </div>
+
+        <p>
+          其中，<img src={p43} alt="M(D)" className="inline-math" />为Biot模量，<img src={p44} alt="Pa" className="inline-math" />，如式(11)所示；<img src={p45} alt="ε_ii" className="inline-math" />为体积应变；<img src={p46} alt="k" className="inline-math" />为各向异性渗透率张量，<img src={p47} alt="m²" className="inline-math" />；<img src={p48} alt="μ" className="inline-math" />为流体粘度，<img src={p49} alt="Pa·s" className="inline-math" />。
+        </p>
+
+        <div className="equation-container">
+          <img src={x32} alt="Biot模量"></img>
+          (8.49)
+        </div>
+
+        <p>
+          将式(8.47)和式(8.48)代入式(8.46)可得多孔弹性介质的流体连续性方程：
+        </p>
+
+        <div className="equation-container">
+          <img src={x33} alt="多孔弹性介质流体连续性方程"></img>
+          (8.50)
+        </div>
+
+        <p>
+          式(8.50)对应的边界条件如下：
+        </p>
+
+        <div className="equation-container">
+          <img src={x34} alt="压力边界条件"></img>
+          (8.51)
+        </div>
+
+        <p>
+          其中，<img src={p50} alt="∂Ω^P" className="inline-math" />为压力场Dirichlet边界，<img src={p51} alt="∂Ω^q" className="inline-math" />为压力场Neumann边界。求解域的各边界满足如下关系：
+        </p>
+
+        <div className="equation-container">
+          <img src={x35} alt="压力边界关系"></img>
+          (8.52)
+        </div>
+
+        <p>
+          式(8.50)和式(8.51)中的<img src={p46} alt="k" className="inline-math" />为渗透率张量。在压裂过程中，岩石破裂导致流体沿裂缝面切向的流动能力大于法向流动能力，表明地层岩石具有各向异性渗透率。因此，对于二维情况，各向异性渗透率张量可写为：
+        </p>
+
+        <div className="equation-container">
+          <img src={x36} alt="各向异性渗透率张量"></img>
+          (8.53)
+        </div>
+
+        <p>
+          其中，<img src={p52} alt="k_x" className="inline-math" />为x方向渗透率，m²；<img src={p53} alt="k_y" className="inline-math" />为y方向渗透率，m²。<img src={p52} alt="k_x" className="inline-math" />和<img src={p53} alt="k_y" className="inline-math" />由岩石初始渗透率和裂缝渗透率加权组成：
+        </p>
+
+        <div className="equation-container">
+          <img src={x37} alt="渗透率加权组成"></img>
+          (8.54)
+        </div>
+
+        <p>
+          其中，<img src={p54} alt="k_{x0}" className="inline-math" />：岩石基质x方向初始渗透率，m²；<img src={p55} alt="k_{y0}" className="inline-math" />：岩石基质y方向初始渗透率，m²；<img src={p56} alt="k_{fx}" className="inline-math" />：x方向裂缝渗透率，m²；<img src={p57} alt="k_{fy}" className="inline-math" />：y方向裂缝渗透率，m²；<img src={p58} alt="W_x" className="inline-math" />：x方向渗透率加权系数；<img src={p59} alt="W_y" className="inline-math" />：y方向渗透率加权系数。
+        </p>
+
+        <p>
+          裂缝渗透率的计算模型如下：
+        </p>
+
+        <div className="equation-container">
+          <img src={x38} alt="裂缝渗透率计算模型"></img>
+          (8.55)
+        </div>
+
+        <p>
+          其中，<img src={p60} alt="η" className="inline-math" />为裂缝面形状因子，本文取1；<img src={p61} alt="w" className="inline-math" />为裂缝宽度，这里假设仅当高斯结点处的应变超过临界应变时岩石才会破裂产生裂缝。因此，可以将裂缝宽度的计算公式表示为：
+        </p>
+
+        <div className="equation-container">
+          <img src={x39} alt="x方向裂缝宽度"></img>
+          (8.56)
+        </div>
+
+        <div className="equation-container">
+          <img src={x40} alt="y方向裂缝宽度"></img>
+          (8.57)
+        </div>
+
+        <div className="equation-container">
+          <img src={x41} alt="总裂缝宽度"></img>
+          (8.58)
+        </div>
+
+        <p>
+          其中，<img src={p62} alt="ε_x" className="inline-math" />为高斯结点x处方向的应变；<img src={p63} alt="ε_y" className="inline-math" />为高斯结点处y方向的应变；<img src={p64} alt="ε_c" className="inline-math" />为临界应变；<img src={p65} alt="l_x" className="inline-math" />为x方向的单元长度，m；<img src={p66} alt="l_y" className="inline-math" />为y方向的单元长度，m。
+        </p>
+
+        <p>
+          渗透率加权系数代表水力裂缝对计算单元渗透率的贡献，等于裂缝宽度与单元长度的比值，即：
+        </p>
+
+        <div className="equation-container">
+          <img src={x42} alt="渗透率加权系数"></img>
+          (8.59)
+        </div>
+
+        <p>
+          临界应变与临界拉应力之间关系可表示为：
+        </p>
+
+        <div className="equation-container">
+          <img src={x43} alt="临界应变与临界拉应力关系"></img>
+          (8.60)
+        </div>
+
+        <h5>数值求解</h5>
+
+        <p>
+          式(8.43)应力平衡方程与式(8.50)流体连续性方程相互耦合，构成了渗流-应力耦合非线性方程组。式(8.43)和式(8.50)分别与权函数Wu和Wp相乘，并在计算域上积分，利用散度定理并结合边界条件可得应力平衡方程和流体连续性方程等效积分"弱"形式：
+        </p>
+
+        <div className="equation-container">
+          <img src={x44} alt="弱形式积分方程"></img>
+          (8.61)
+          <img src={x45} alt="弱形式积分方程"></img>
+        </div>
+
       </div>
     </div>
   );
