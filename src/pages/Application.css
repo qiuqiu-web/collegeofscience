@@ -271,3 +271,21 @@ h5 {
     margin: 15px 0 10px 0;
   }
 }
+/* 文档格式 */
+.wendang h1 {
+  font-size: 1.7em;
+  text-align: center;
+}
+.wendang h2 {
+  font-size: 1.4em;
+  margin: 0 35px;
+}
+.wendang h4 {
+  font-size: 1.2em;
+  text-indent: 2em;
+  border-bottom: none;
+  margin: 0 40px;
+}
+.wendang p {
+  margin: 0 40px;
+}
