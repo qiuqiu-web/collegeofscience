@@ -14,29 +14,38 @@ const Navigation = () => {
       path: "/application",
       label: "教学成果及应用证明材料",
       children: [
-        { path: "/expert-evaluation", label: "专家评价" },
-        { path: "/promotion", label: "校外推广应用" },
+        { path: "/section-2-1", label: "2.1 成果相关获奖证书" },
+        { path: "/section-2-2", label: "2.2 教学成果及应用证明材料" },
+        { path: "/section-2-3", label: "2.3 辐射推广效果" },
       ],
     },
     {
       path: "/materials",
       label: "成果支撑材料",
       children: [
-        { path: "/policy-documents", label: "相关政策文件" },
+        { path: "/policy-documents", label: "政策文件" },
+        { path: "/questionnaire", label: "相关获奖文件" },
         { path: "/questionnaire", label: "问卷调查及分析" },
         { path: "/education-classroom", label: "教育课堂" },
         { path: "/base-group", label: "基地群" },
         { path: "/theme-activities", label: "主题教育活动" },
-        { path: "/management-evaluation", label: "教育运行管理与评价" },
-        { path: "/honors", label: "荣誉成果" },
+        { path: "/management-evaluation", label: "管理评价与评价" },
+        { path: "/honors", label: "平台成果" },
         { path: "/teaching-resources", label: "教学资源成果" },
         { path: "/hospital-feedback", label: "医院反馈" },
         { path: "/social-service", label: "社会服务" },
-        { path: "/news-media", label: "新闻媒体报道" },
+        { path: "/news-media", label: "新闻媒体" },
         { path: "/research-results", label: "科研成果" },
       ],
     },
-    { path: "/other-materials", label: "其他材料" },
+    {
+      path: "/other-materials",
+      label: "其他材料",
+      children: [
+        { path: "/other-materials-2-2-3", label: "2.2.3 应用案例库（部分）" },
+        { path: "/other-materials-2-2-5", label: "2.2.5 部分教学教改研究项目结题报告6项" },
+      ],
+    },
   ];
 
   const toggleMobileMenu = () => {
@@ -73,11 +82,10 @@ const Navigation = () => {
             >
               <Link
                 to={item.path}
-                className={`nav-link ${
-                  isActive(item.path) || hasActiveChild(item.children)
-                    ? "active"
-                    : ""
-                }`}
+                className={`nav-link ${isActive(item.path) || hasActiveChild(item.children)
+                  ? "active"
+                  : ""
+                  }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}
@@ -88,9 +96,8 @@ const Navigation = () => {
                     <li key={childIndex} className="dropdown-item">
                       <Link
                         to={child.path}
-                        className={`dropdown-link ${
-                          isActive(child.path) ? "active" : ""
-                        }`}
+                        className={`dropdown-link ${isActive(child.path) ? "active" : ""
+                          }`}
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {child.label}

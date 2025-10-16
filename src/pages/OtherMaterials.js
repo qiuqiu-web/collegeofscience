@@ -1,31 +1,33 @@
 import React from 'react';
 import './PageTemplate.css';
+import './Application.css';
 
 const OtherMaterials = () => {
   return (
-    <div className="page-template">
-      <h1 className="page-title">其他材料</h1>
-
-      <div className="content-section">
-        <h2>补充材料</h2>
-        <ul className="content-list">
-          <li>项目申报书</li>
-          <li>中期检查报告</li>
-          <li>结题报告</li>
-          <li>成果鉴定书</li>
-          <li>推广应用证明</li>
-        </ul>
-      </div>
-
-      <div className="content-section">
-        <h2>附件材料</h2>
-        <ul className="content-list">
-          <li>相关会议纪要</li>
-          <li>合作协议书</li>
-          <li>培训证书</li>
-          <li>获奖证书复印件</li>
-        </ul>
-      </div>
+    <div className="content-section">
+      <h2>
+        <b>目录</b>
+      </h2>
+      <p>
+        <b>2.2.3 应用案例库（部分）</b>
+      </p>
+      <ul className="content-list">
+        <li>2.2.3.1 油藏数值模拟的线性求解算法</li>
+        <li>2.2.3.2 压裂液滤失系数模型</li>
+        <li>2.2.3.3 单相渗流的连续性方程</li>
+        <li>2.2.3.4 钻具故障概率分析</li>
+        <li>2.2.3.5 勘探甜点区分析的概率问题</li>
+        <li>2.2.3.6 钻头选择方法</li>
+        <li>2.2.3.7 储层参数确定建模</li>
+        <li>2.2.3.8 多层叠置煤层压裂裂缝纵向扩展模型与数值模拟</li>
+      </ul>
+      <p>
+        <b>2.2.5 部分教学教改研究项目结题报告6项</b>
+      </p>
+      <ul className="content-list">
+        <li>课程研究报告1：《模糊数学》改革建设报告（2020）</li>
+        <li>课程研究报告2：《数值分析》优质课程建设报告（2020）</li>
+      </ul>
     </div>
   );
 };

@@ -1,0 +1,193 @@
+/* Application页面布局样式 */
+.application-layout {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.application-sidebar {
+  width: 250px;
+  background-color: #f0f8ff;
+  border-right: 1px solid #e0e0e0;
+  height: fit-content;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.application-main {
+  flex: 1;
+  background-color: #fff;
+  position: relative;
+}
+
+.application-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-header {
+  padding: 20px 15px;
+  background-color: #e6f3ff;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.sidebar-nav {
+  padding: 10px 0;
+}
+
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-item {
+  margin: 0;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 15px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-link:hover {
+  background-color: #e6f3ff;
+  color: #0066cc;
+  border-left-color: #0066cc;
+}
+
+.sidebar-link.active {
+  background-color: #0066cc;
+  color: white;
+  border-left-color: #004499;
+  font-weight: 600;
+}
+
+.sidebar-link.active:hover {
+  background-color: #0052a3;
+  color: white;
+}
+
+/* 可展开的侧边栏链接样式 */
+.sidebar-link.expandable {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.expand-icon {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  color: #666;
+}
+
+.expand-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.sidebar-link.expandable:hover .expand-icon {
+  color: #0066cc;
+}
+
+/* 子菜单样式 */
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  animation: slideDown 0.3s ease-out;
+  overflow: hidden;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 200px;
+    padding-top: 5px;
+  }
+}
+
+.submenu .sidebar-item {
+  margin: 0;
+}
+
+.submenu-link {
+  padding: 10px 20px !important;
+  font-size: 13px !important;
+  color: #666 !important;
+  border-left: 2px solid transparent !important;
+}
+
+.submenu-link:hover {
+  background-color: #f0f8ff !important;
+  color: #0066cc !important;
+  border-left-color: #0066cc !important;
+}
+
+.submenu-link.active {
+  background-color: #e6f3ff !important;
+  color: #0066cc !important;
+  border-left-color: #0066cc !important;
+  font-weight: 600 !important;
+}
+
+.submenu-link.active:hover {
+  background-color: #d6e9ff !important;
+  color: #0066cc !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .application-layout {
+    flex-direction: row;
+  }
+
+  .application-sidebar {
+    width: 200px;
+    height: fit-content;
+  }
+
+  .application-main {
+    width: calc(100% - 200px);
+  }
+
+  .application-content {
+    padding: 15px;
+  }
+
+  .sidebar-header h3 {
+    font-size: 14px;
+  }
+
+  .sidebar-link {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+}
