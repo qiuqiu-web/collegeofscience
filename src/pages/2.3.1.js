@@ -11,9 +11,9 @@ const Section231 = () => {
   return (
     <div>
       <div>
-        <h1 className="page-title">2.3 辐射推广效果</h1>
+        <h1 className="page-title">辐射推广效果</h1>
         <div className="content-section">
-          <h3>2.3.1教学成果及应用证明材料</h3>
+          <h3>教学成果及应用证明材料</h3>
           <div className="image-container">
             <p>1.中国石油大学</p>
             <img src={cg1}></img>

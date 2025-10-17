@@ -98,13 +98,13 @@ const Section225 = () => {
         </p>
         <p>
           [1] 李春泉 . A fuzzy multi-objective linear programming with
-          interval-typed triangular fuzzy numbers. Open Mathematics, 2019 (17):
-          607-626. (SCI)
+          interval-typed triangular fuzzy numbers. Open Mathematics, 2019
+          (17): 607-626. (SCI)
         </p>
         <p>
-          [2] 李春泉*, Dongxue Li, 金检华. Generalized Hesitant Fuzzy Soft Sets
-          and Its Application to Decision Making. International Journal of
-          Pattern Recognition and Artificial Intelligence, 33（12） (2019)
+          [2] 李春泉*, Dongxue Li, 金检华. Generalized Hesitant Fuzzy Soft
+          Sets and Its Application to Decision Making. International Journal
+          of Pattern Recognition and Artificial Intelligence, 33（12） (2019)
           1950019 (30 pages) (SCI)
         </p>
         <p>
@@ -112,14 +112,14 @@ const Section225 = () => {
           CCIS 1069, pp. 150 -167, 2019. (EI 会议）
         </p>
         <p>
-          [4] 叶明飞, 金检华 *, 冯晔. Negations and aggregation operators based
-          on a new hesitant fuzzy partial ordering. Iranian Journal of Fuzzy
-          systems, Vol. 17, No. 1 (2020):1-12 (SCI)
+          [4] 叶明飞, 金检华 *, 冯晔. Negations and aggregation operators
+          based on a new hesitant fuzzy partial ordering. Iranian Journal of
+          Fuzzy systems, Vol. 17, No. 1 (2020):1-12 (SCI)
         </p>
         <p>
-          [5] 金检华 *，叶明飞，Witold Pedrycz. Quintuple Implication Principle
-          on interval-valued intuitionistic fuzzy sets. Soft Computing, (2020)
-          24:12091 -12109 (SCI)
+          [5] 金检华 *，叶明飞，Witold Pedrycz. Quintuple Implication
+          Principle on interval-valued intuitionistic fuzzy sets. Soft
+          Computing, (2020) 24:12091 -12109 (SCI)
         </p>
         <h2>4 项目自我评价</h2>
         <h4>4.1 项目完成情况</h4>
@@ -282,8 +282,6 @@ const Section225 = () => {
             究打下了坚实的基础。
           </p>
         </div>
-        ;{/*3END-----------------------------------------  */}
-        {/* 44444444444444 */}
         <div className="wendang">
           <h1>课程调研报告 4：《现代数学基础（拓扑学）》研究生课程</h1>
           <h1>建设调研报告</h1>
@@ -339,7 +337,7 @@ const Section225 = () => {
             20%，考勤和课堂表现占 10%；期末笔试成绩占 70%。
           </p>
         </div>
-        ;{/* 4----END */}
+        {/* 4----END */}
         {/* 55555555555 */}
         <div className="wendang">
           <h1>课程调研报告 5：《现代数学基础（分形和混沌）》</h1>
@@ -390,7 +388,7 @@ const Section225 = () => {
             20%，考勤和课堂表现占 10%；期末笔试成绩占 70%。
           </p>
         </div>
-        ;{/* 5---------------END */}
+        {/* 5---------------END */}
         {/* 666666666666666666666 */}
         <div className="wendang">
           <h1>课程调研报告 6：《模糊数学》研究生课程建设调研报告</h1>
@@ -448,7 +446,7 @@ const Section225 = () => {
           <p>
             课程学习综合考核采用平时成绩、讨论报告大作业和期末闭卷考试相结合的
             方式进行。平时成绩、平时作业、参与课堂练习或讨论占比
-            30%，讨论报告大作 业占 20% ，期末闭卷笔试成绩占 50%。
+            30%，讨论报告大作业占 20% ，期末闭卷笔试成绩占 50%。
           </p>
           <h4>4. 社会评价</h4>
           <p>
@@ -458,7 +456,7 @@ const Section225 = () => {
             研究生开展科学研究提供了必要的工具。
           </p>
         </div>
-        ;{/* 6----------END */}
+        {/* 6----------END */}
       </div>
     </div>
   );

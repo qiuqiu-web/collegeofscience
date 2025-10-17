@@ -8,7 +8,7 @@ const Section213 = () => {
   return (
     <div>
       <div>
-        <h4>2.1.3 AI辅助教学获奖2项</h4>
+        <h4>AI辅助教学获奖2项</h4>
         <div className="image-container">
           <h5>
             1.

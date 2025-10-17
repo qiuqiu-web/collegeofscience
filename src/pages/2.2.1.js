@@ -10,7 +10,7 @@ const Section211 = () => {
     <div>
       <div className="content-section">
         <div>
-          <h4>2.2.1 成果鉴定书</h4>
+          <h4>成果鉴定书</h4>
           <div className="image-container">
             <img src={c1} alt="成果鉴定书"></img>
             <img src={c2} alt="成果鉴定书"></img>

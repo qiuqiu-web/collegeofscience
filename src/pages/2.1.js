@@ -26,11 +26,11 @@ import a2 from "../images/ai辅助2.png";
 const Section21 = () => {
   return (
     <div>
-      <h1 className="page-title">2.1 成果相关获奖证书</h1>
+      <h1 className="page-title">成果相关获奖证书</h1>
 
       <div className="content-section">
         <div>
-          <h4>2.1.1 教学成果类获奖9项</h4>
+          <h4>教学成果类获奖9项</h4>
           <div className="image-container">
             <h5>1. 西南石油大学2020年教学成果奖二等奖</h5>
             <img src={s1} alt="西南石油大学2020年教学成果奖二等奖"></img>
@@ -70,7 +70,7 @@ const Section21 = () => {
 
         {/*从这里开始是2.1.2的展示 */}
         <div>
-          <h4>2.1.2 "数学+"教学科研类获奖7项</h4>
+          <h4>"数学+"教学科研类获奖7项</h4>
           <div className="image-container">
             <h5>1. 优秀科技论文奖一等奖</h5>
             <img src={w1} alt="优秀科技论文奖一等奖"></img>
@@ -90,7 +90,7 @@ const Section21 = () => {
         </div>
         {/*从这里开始是2.1.3的展示 */}
         <div>
-          <h4>2.1.3 AI辅助教学获奖2项</h4>
+          <h4>AI辅助教学获奖2项</h4>
           <div className="image-container">
             <h5>
               1.

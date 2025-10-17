@@ -16,7 +16,7 @@ import s9 from "../images/数竞三等奖2.png";
 const Section211 = () => {
   return (
     <div>
-      <h1 className="page-title">2.1 成果相关获奖证书</h1>
+      <h1 className="page-title">成果相关获奖证书</h1>
 
       <div className="content-section">
         <div>

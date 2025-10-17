@@ -14,7 +14,7 @@ const Section212 = () => {
   return (
     <div>
       <div>
-        <h4>2.1.2 "数学+"教学科研类获奖7项</h4>
+        <h4>"数学+"教学科研类获奖7项</h4>
         <div className="image-container">
           <h5>1. 优秀科技论文奖一等奖</h5>
           <img src={w1} alt="优秀科技论文奖一等奖"></img>
