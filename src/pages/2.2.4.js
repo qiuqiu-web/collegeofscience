@@ -15,7 +15,8 @@ import h10 from "../images/h10.png";
 
 const Section224 = () => {
   return (
-    <div>
+    <div className="content-section">
+      <h4>教学教改研究项目</h4>
       <h3>1.省级教改项目3项</h3>
       <p>
         （1）2024-2026年省级高等教育人才培养质量和教学教改项目——《数值分析》课程教学质量提升与教学方法改革研究课程建设

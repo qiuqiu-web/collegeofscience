@@ -35,36 +35,79 @@ const OtherMaterialsLayout = ({ children }) => {
           <nav className="sidebar-nav">
             <ul className="sidebar-menu">
               <li className="sidebar-item">
-                <Link to="/other-materials" className={`sidebar-link ${isActive('/other-materials') ? 'active' : ''}`}>目录</Link>
+                <Link
+                  to="/other-materials"
+                  className={`sidebar-link ${
+                    isActive("/other-materials") ? "active" : ""
+                  }`}
+                >
+                  目录
+                </Link>
               </li>
               <li className="sidebar-item">
                 <div
-                  className={`sidebar-link ${isActive('/other-materials-2-2-3') || isParentActive('/other-materials-2-2-3') ? 'active' : ''} expandable`}
+                  className={`sidebar-link ${
+                    isActive("/other-materials-2-2-3") ||
+                    isParentActive("/other-materials-2-2-3")
+                      ? "active"
+                      : ""
+                  } expandable`}
                   onClick={toggleSection223}
                 >
-                  <span>2.2.3 应用案例库（部分）</span>
-                  <span className={`expand-icon ${isSection223Expanded ? 'expanded' : ''}`}>▼</span>
+                  <span>应用案例库（部分）</span>
+                  <span
+                    className={`expand-icon ${
+                      isSection223Expanded ? "expanded" : ""
+                    }`}
+                  >
+                    ▼
+                  </span>
                 </div>
                 {isSection223Expanded && (
                   <ul className="submenu">
                     <li className="sidebar-item">
-                      <Link to="/other-materials-2-2-3" className={`sidebar-link submenu-link ${isActive('/other-materials-2-2-3') ? 'active' : ''}`}>2.2.3 应用案例库（部分）</Link>
+                      <Link
+                        to="/other-materials-2-2-3"
+                        className={`sidebar-link submenu-link ${
+                          isActive("/other-materials-2-2-3") ? "active" : ""
+                        }`}
+                      >
+                        应用案例库（部分）
+                      </Link>
                     </li>
                   </ul>
                 )}
               </li>
               <li className="sidebar-item">
                 <div
-                  className={`sidebar-link ${isActive('/other-materials-2-2-5') || isParentActive('/other-materials-2-2-5') ? 'active' : ''} expandable`}
+                  className={`sidebar-link ${
+                    isActive("/other-materials-2-2-5") ||
+                    isParentActive("/other-materials-2-2-5")
+                      ? "active"
+                      : ""
+                  } expandable`}
                   onClick={toggleSection225}
                 >
-                  <span>2.2.5 部分教学教改研究项目结题报告6项</span>
-                  <span className={`expand-icon ${isSection225Expanded ? 'expanded' : ''}`}>▼</span>
+                  <span>部分教学教改研究项目结题报告6项</span>
+                  <span
+                    className={`expand-icon ${
+                      isSection225Expanded ? "expanded" : ""
+                    }`}
+                  >
+                    ▼
+                  </span>
                 </div>
                 {isSection225Expanded && (
                   <ul className="submenu">
                     <li className="sidebar-item">
-                      <Link to="/other-materials-2-2-5" className={`sidebar-link submenu-link ${isActive('/other-materials-2-2-5') ? 'active' : ''}`}>2.2.5 部分教学教改研究项目结题报告6项</Link>
+                      <Link
+                        to="/other-materials-2-2-5"
+                        className={`sidebar-link submenu-link ${
+                          isActive("/other-materials-2-2-5") ? "active" : ""
+                        }`}
+                      >
+                        部分教学教改研究项目结题报告6项
+                      </Link>
                     </li>
                   </ul>
                 )}
@@ -74,9 +117,7 @@ const OtherMaterialsLayout = ({ children }) => {
         </div>
 
         <div className="other-materials-main">
-          <div className="other-materials-content">
-            {children}
-          </div>
+          <div className="other-materials-content">{children}</div>
         </div>
       </div>
     </div>

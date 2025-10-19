@@ -17,8 +17,8 @@ import y12 from "../images/y12.png";
 const Section226 = () => {
   return (
     <div>
-      <h3>2.2.6 课程资源</h3>
-      <div>
+      <div className="content-section">
+        <h4>课程资源</h4>
         <p>
           <b>1.课程线上网站</b>
         </p>
