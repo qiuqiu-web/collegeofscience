@@ -1,5 +1,10 @@
 .header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image: url("../images/ypcj.jpg");
+  background-size: contain;
+  /* 新增的属性，让图片完整显示 */
+  /* background-repeat: no-repeat; */
+  /* 防止图片重复，可选，根据需求决定 */
+  background-position: center;
   color: white;
   padding: 40px 20px;
   text-align: center;

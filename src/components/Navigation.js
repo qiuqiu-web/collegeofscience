@@ -14,9 +14,9 @@ const Navigation = () => {
       path: "/application",
       label: "教学成果及应用证明材料",
       children: [
-        { path: "/section-2-1", label: "2.1 成果相关获奖证书" },
-        { path: "/section-2-2", label: "2.2 教学成果及应用证明材料" },
-        { path: "/section-2-3", label: "2.3 辐射推广效果" },
+        { path: "/section-2-1", label: "成果相关获奖证书" },
+        { path: "/section-2-2", label: "教学成果及应用证明材料" },
+        { path: "/section-2-3", label: "辐射推广效果" },
       ],
     },
     {
@@ -42,8 +42,8 @@ const Navigation = () => {
       path: "/other-materials",
       label: "其他材料",
       children: [
-        { path: "/other-materials-2-2-3", label: "2.2.3 应用案例库（部分）" },
-        { path: "/other-materials-2-2-5", label: "2.2.5 部分教学教改研究项目结题报告6项" },
+        { path: "/other-materials-2-2-3", label: "应用案例库（部分）" },
+        { path: "/other-materials-2-2-5", label: "部分教学教改研究项目结题报告6项" },
       ],
     },
   ];
