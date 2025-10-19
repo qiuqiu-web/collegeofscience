@@ -4,7 +4,8 @@ import "./Application.css";
 
 const Section225 = () => {
   return (
-    <div>
+    <div className="content-section">
+      "
       <div className="wendang">
         {" "}
         {/* <h3>部分教学教改研究项目结题报告6项</h3> */}
