@@ -19,31 +19,34 @@ const Navigation = () => {
         { path: "/section-2-3", label: "辐射推广效果" },
       ],
     },
-    {
-      path: "/materials",
-      label: "成果支撑材料",
-      children: [
-        { path: "/policy-documents", label: "政策文件" },
-        { path: "/questionnaire", label: "相关获奖文件" },
-        { path: "/questionnaire", label: "问卷调查及分析" },
-        { path: "/education-classroom", label: "教育课堂" },
-        { path: "/base-group", label: "基地群" },
-        { path: "/theme-activities", label: "主题教育活动" },
-        { path: "/management-evaluation", label: "管理评价与评价" },
-        { path: "/honors", label: "平台成果" },
-        { path: "/teaching-resources", label: "教学资源成果" },
-        { path: "/hospital-feedback", label: "医院反馈" },
-        { path: "/social-service", label: "社会服务" },
-        { path: "/news-media", label: "新闻媒体" },
-        { path: "/research-results", label: "科研成果" },
-      ],
-    },
+    // {
+    //   path: "/materials",
+    //   label: "成果支撑材料",
+    //   children: [
+    //     { path: "/policy-documents", label: "政策文件" },
+    //     { path: "/questionnaire", label: "相关获奖文件" },
+    //     { path: "/questionnaire", label: "问卷调查及分析" },
+    //     { path: "/education-classroom", label: "教育课堂" },
+    //     { path: "/base-group", label: "基地群" },
+    //     { path: "/theme-activities", label: "主题教育活动" },
+    //     { path: "/management-evaluation", label: "管理评价与评价" },
+    //     { path: "/honors", label: "平台成果" },
+    //     { path: "/teaching-resources", label: "教学资源成果" },
+    //     { path: "/hospital-feedback", label: "医院反馈" },
+    //     { path: "/social-service", label: "社会服务" },
+    //     { path: "/news-media", label: "新闻媒体" },
+    //     { path: "/research-results", label: "科研成果" },
+    //   ],
+    // },
     {
       path: "/other-materials",
       label: "其他材料",
       children: [
         { path: "/other-materials-2-2-3", label: "应用案例库（部分）" },
-        { path: "/other-materials-2-2-5", label: "部分教学教改研究项目结题报告6项" },
+        {
+          path: "/other-materials-2-2-5",
+          label: "部分教学教改研究项目结题报告6项",
+        },
       ],
     },
   ];
@@ -83,8 +86,8 @@ const Navigation = () => {
               <Link
                 to={item.path}
                 className={`nav-link ${isActive(item.path) || hasActiveChild(item.children)
-                  ? "active"
-                  : ""
+                    ? "active"
+                    : ""
                   }`}
                 onClick={() => setMobileMenuOpen(false)}
               >

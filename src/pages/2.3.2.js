@@ -16,12 +16,10 @@ import cg15 from "../images/成果15.png";
 
 const Section232 = () => {
   return (
-    <div>
-      <h3>2.3.2 国际合作与跨领域交流</h3>
+    <div className="content-section">
+      <h4> 国际合作与跨领域交流</h4>
       <div className="image-container">
-        <p>
-          1."一带一路"引领学术盛宴：斯洛文尼亚专家来华共话动力系统学术前沿
-        </p>
+        <p>1."一带一路"引领学术盛宴：斯洛文尼亚专家来华共话动力系统学术前沿</p>
         <img src={cg6}></img>
         <img src={cg7}></img>
         <img src={cg8}></img>

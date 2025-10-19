@@ -16,11 +16,11 @@ import s9 from "../images/数竞三等奖2.png";
 const Section211 = () => {
   return (
     <div>
-      <h1 className="page-title">成果相关获奖证书</h1>
+      {/* <h1 className="page-title">成果相关获奖证书</h1> */}
 
       <div className="content-section">
         <div>
-          <h4>2.1.1 教学成果类获奖9项</h4>
+          <h4> 教学成果类获奖9项</h4>
           <div className="image-container">
             <h5>1. 西南石油大学2020年教学成果奖二等奖</h5>
             <img src={s1} alt="西南石油大学2020年教学成果奖二等奖"></img>

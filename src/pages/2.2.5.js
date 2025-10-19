@@ -4,11 +4,12 @@ import "./Application.css";
 
 const Section225 = () => {
   return (
-    <div>
+    <div className="content-section">
+      "
       <div className="wendang">
         {" "}
-        <h3>2.2.5 部分教学教改研究项目结题报告6项</h3>
-        <h1>课程研究报告 1：《模糊数学》改革建设报告（2020）</h1>
+        {/* <h3>部分教学教改研究项目结题报告6项</h3> */}
+        <h1>课程研究报告1：《模糊数学》改革建设报告（2020）</h1>
         <h2>1 项目概况</h2>
         <h4>1.1 经费来源</h4>
         <p>本项目经费源自学校的四川省“双一流”建设经费。</p>
@@ -98,13 +99,13 @@ const Section225 = () => {
         </p>
         <p>
           [1] 李春泉 . A fuzzy multi-objective linear programming with
-          interval-typed triangular fuzzy numbers. Open Mathematics, 2019
-          (17): 607-626. (SCI)
+          interval-typed triangular fuzzy numbers. Open Mathematics, 2019 (17):
+          607-626. (SCI)
         </p>
         <p>
-          [2] 李春泉*, Dongxue Li, 金检华. Generalized Hesitant Fuzzy Soft
-          Sets and Its Application to Decision Making. International Journal
-          of Pattern Recognition and Artificial Intelligence, 33（12） (2019)
+          [2] 李春泉*, Dongxue Li, 金检华. Generalized Hesitant Fuzzy Soft Sets
+          and Its Application to Decision Making. International Journal of
+          Pattern Recognition and Artificial Intelligence, 33（12） (2019)
           1950019 (30 pages) (SCI)
         </p>
         <p>
@@ -112,14 +113,14 @@ const Section225 = () => {
           CCIS 1069, pp. 150 -167, 2019. (EI 会议）
         </p>
         <p>
-          [4] 叶明飞, 金检华 *, 冯晔. Negations and aggregation operators
-          based on a new hesitant fuzzy partial ordering. Iranian Journal of
-          Fuzzy systems, Vol. 17, No. 1 (2020):1-12 (SCI)
+          [4] 叶明飞, 金检华 *, 冯晔. Negations and aggregation operators based
+          on a new hesitant fuzzy partial ordering. Iranian Journal of Fuzzy
+          systems, Vol. 17, No. 1 (2020):1-12 (SCI)
         </p>
         <p>
-          [5] 金检华 *，叶明飞，Witold Pedrycz. Quintuple Implication
-          Principle on interval-valued intuitionistic fuzzy sets. Soft
-          Computing, (2020) 24:12091 -12109 (SCI)
+          [5] 金检华 *，叶明飞，Witold Pedrycz. Quintuple Implication Principle
+          on interval-valued intuitionistic fuzzy sets. Soft Computing, (2020)
+          24:12091 -12109 (SCI)
         </p>
         <h2>4 项目自我评价</h2>
         <h4>4.1 项目完成情况</h4>

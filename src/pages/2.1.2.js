@@ -13,7 +13,7 @@ import w7 from "../images/统计入库证书.png";
 const Section212 = () => {
   return (
     <div>
-      <div>
+      <div className="content-section">
         <h4>"数学+"教学科研类获奖7项</h4>
         <div className="image-container">
           <h5>1. 优秀科技论文奖一等奖</h5>

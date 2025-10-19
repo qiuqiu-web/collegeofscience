@@ -249,7 +249,7 @@ const Section223 = () => {
       <div className="content-section">
         {/* 2.2.3开始 */}
         <div>
-          <h5>应用案例库（部分）</h5>
+          <h4>应用案例库（部分）</h4>
           <h5>油藏数值模拟的线性求解算法</h5>
           <p>
             油藏数值模拟起源于20世纪50年代,它是定量描述非均质储油地层中多相流体流动规律的工具，在油藏管理、动态预测、二次开采、井位部署、方案调整等方面起着非常重要的作用.
@@ -753,7 +753,11 @@ const Section223 = () => {
               alt="P(A) = 20×20 / 40×40 = 1/4"
               className="inline-math"
             />
-            。10口井中任意一口井能打在"甜点"区的概率都是<img src={p15} alt="1/4" className="inline-math" />，未打在"甜点"区的概率是<img src={p16} alt="3/4" className="inline-math" />，根据独立性，这是一个10重的伯努利试验，从而B="至少有一口没有打在"甜点"区"的概率为
+            。10口井中任意一口井能打在"甜点"区的概率都是
+            <img src={p15} alt="1/4" className="inline-math" />
+            ，未打在"甜点"区的概率是
+            <img src={p16} alt="3/4" className="inline-math" />
+            ，根据独立性，这是一个10重的伯努利试验，从而B="至少有一口没有打在"甜点"区"的概率为
           </p>
 
           <div className="equation-container">
@@ -1066,7 +1070,8 @@ const Section223 = () => {
           <p>
             其中，
             <img src={p35} alt="K_D" className="inline-math" />
-            为多孔介质受损后的体积模量，<img src={p36} alt="Pa" className="inline-math" />；
+            为多孔介质受损后的体积模量，
+            <img src={p36} alt="Pa" className="inline-math" />；
             <img src={p37} alt="K_s" className="inline-math" />
             为骨架颗粒的体积模量，MPa。
           </p>
@@ -1292,7 +1297,9 @@ const Section223 = () => {
             <img src={x46} alt="弱形式积分方程"></img>
             (8.62)
           </div>
-          <p>对于每个计算单元的位移场、压力场和对应权函数构造相应的插值函数，其插值形式为：</p>
+          <p>
+            对于每个计算单元的位移场、压力场和对应权函数构造相应的插值函数，其插值形式为：
+          </p>
           <div className="equation-container">
             <img src={x47} alt="插值函数"></img>
             (8.63)
@@ -1304,7 +1311,9 @@ const Section223 = () => {
             <img src={x49} alt="弱形式积分方程"></img>
             (8.65)
           </div>
-          <p>式中，Bu、Buvol和BP分别为应变矩阵、体积应变矩阵和压力插值形函数的导数矩阵.</p>
+          <p>
+            式中，Bu、Buvol和BP分别为应变矩阵、体积应变矩阵和压力插值形函数的导数矩阵.
+          </p>
           <p>采用向后欧拉法对式(8.65)中关于时间导数的项进行离散，即：</p>
           <div className="equation-container">
             <img src={x50} alt="向后欧拉法离散"></img>
@@ -1314,27 +1323,34 @@ const Section223 = () => {
             <img src={x52} alt="向后欧拉法离散"></img>
             (8.66c)
           </div>
-          <p>将式(8.66)代入式(8.65)，并将第n
-            +1个时间步变量的下标去掉，则式(8.65)可写为：</p>
+          <p>
+            将式(8.66)代入式(8.65)，并将第n
+            +1个时间步变量的下标去掉，则式(8.65)可写为：
+          </p>
           <div className="equation-container">
             <img src={x53} alt="向后欧拉法离散"></img>
             (8.67)
           </div>
           <p>
-            采用Newton-Raphson迭代法求解渗流-应力耦合方程组，因此将式(8.64)和(8.67)写成余量的形式：</p>
+            采用Newton-Raphson迭代法求解渗流-应力耦合方程组，因此将式(8.64)和(8.67)写成余量的形式：
+          </p>
           <div className="equation-container">
             <img src={x55} alt="余量形式"></img>
             (8.68)
             <img src={x56} alt="余量形式"></img>
             (8.69)
           </div>
-          <p>则渗流-应力耦合方程组在第个迭代步的Newton-Raphson（NR）迭代格式可写为：</p>
+          <p>
+            则渗流-应力耦合方程组在第个迭代步的Newton-Raphson（NR）迭代格式可写为：
+          </p>
           <div className="equation-container">
             <img src={x57} alt="Newton-Raphson迭代格式"></img>
             (8.70)
           </div>
           <p>
-            式(8.70)左边第一项为雅可比矩阵<img src={p67} alt="J" className="inline-math" />，各分量为：
+            式(8.70)左边第一项为雅可比矩阵
+            <img src={p67} alt="J" className="inline-math" />
+            ，各分量为：
           </p>
           <div className="equation-container">
             <img src={x58} alt="雅可比矩阵分量"></img>
@@ -1346,23 +1362,39 @@ const Section223 = () => {
             <img src={x61} alt="雅可比矩阵分量"></img>
             (8.71d)
           </div>
-          <p>通过式(8.70)可求得第<img src={p68} alt="n+1" className="inline-math" />个迭代步的位移增量<img src={p69} alt="Δu" className="inline-math" />和压力增量<img src={p70} alt="Δp" className="inline-math" />，进而得到第<img src={p71} alt="n+1" className="inline-math" />个迭代步的位移和压力的试探解，即：</p>
+          <p>
+            通过式(8.70)可求得第
+            <img src={p68} alt="n+1" className="inline-math" />
+            个迭代步的位移增量
+            <img src={p69} alt="Δu" className="inline-math" />
+            和压力增量
+            <img src={p70} alt="Δp" className="inline-math" />
+            ，进而得到第
+            <img src={p71} alt="n+1" className="inline-math" />
+            个迭代步的位移和压力的试探解，即：
+          </p>
           <div className="equation-container">
             <img src={x62} alt="试探解"></img>
             (8.72)
           </div>
-          <p>若位移场和压力场的误差都满足式(35)所示的收敛条件时，迭代结束，否则继续迭代：</p>
+          <p>
+            若位移场和压力场的误差都满足式(35)所示的收敛条件时，迭代结束，否则继续迭代：
+          </p>
           <div className="equation-container">
             <img src={x63} alt="收敛条件"></img>
             (8.73)
           </div>
-          <p>由图8-1可知，在压裂初始阶段，三种不同时间步长下注入点压力值相差较大，但是当注入时间超过18s后，不同时间步长下注入点压力值相差较小，并且在注入结束时注入点压力相对误差仅为0.15%，由此验证了该模型的收敛性和稳定性.</p>
+          <p>
+            由图8-1可知，在压裂初始阶段，三种不同时间步长下注入点压力值相差较大，但是当注入时间超过18s后，不同时间步长下注入点压力值相差较小，并且在注入结束时注入点压力相对误差仅为0.15%，由此验证了该模型的收敛性和稳定性.
+          </p>
           <div className="image-container">
-            <img src={tu2} ></img>
+            <img src={tu2}></img>
             <p>图8-1 三种不同时间步长情况下注入点压力随时间变化图</p>
           </div>
           <h5>利用贝叶斯推断优化CO₂羽流迁移模型</h5>
-          <p>某CO₂封存项目位于海底盐层，通过监测井实时测量CO₂羽流的压力变化和温度数据。由于地质模型的不确定性（如渗透率分布未知），需通过贝叶斯推断将监测数据与数值模型结合，更新对CO₂迁移范围的预测。</p>
+          <p>
+            某CO₂封存项目位于海底盐层，通过监测井实时测量CO₂羽流的压力变化和温度数据。由于地质模型的不确定性（如渗透率分布未知），需通过贝叶斯推断将监测数据与数值模型结合，更新对CO₂迁移范围的预测。
+          </p>
           <h3>数学模型与公式</h3>
           <h3>1. 数值模型（渗流方程）</h3>
           <p>CO₂在多孔介质中的流动遵循质量守恒方程和达西定律：</p>
@@ -1374,7 +1406,9 @@ const Section223 = () => {
           <p>v=− k/μ∇P: 渗流速度（k: 渗透率，未知参数；μ: CO₂动力黏度）</p>
           <p>q: 源汇项（注入速率，已知）。</p>
           <h3>2. 贝叶斯推断框架</h3>
-          <p>目标：通过监测数据y更新渗透率k的先验分布P(k)，得到后验分布P(k∣y)。</p>
+          <p>
+            目标：通过监测数据y更新渗透率k的先验分布P(k)，得到后验分布P(k∣y)。
+          </p>
           <h3>贝叶斯定理：</h3>
           <div className="equation-container">
             <img src={x65} alt="贝叶斯定理"></img>
@@ -1386,7 +1420,9 @@ const Section223 = () => {
           <h3>3. 简化模型与参数化</h3>
           <p>假设渗透率k在空间上均匀（简化为一维问题）。</p>
           <p>渗透率先验分布：对数正态分布，P(k)∼LN(μk,σk2)。</p>
-          <p>数值模型输出：预测压力P^(k)，与实际监测压力Pobs的残差为ϵ=Pobs−P^(k)。</p>
+          <p>
+            数值模型输出：预测压力P^(k)，与实际监测压力Pobs的残差为ϵ=Pobs−P^(k)。
+          </p>
           <p>似然函数：假设高斯噪声，</p>
           <div className="equation-container">
             <img src={x66} alt="似然函数"></img>
@@ -1394,15 +1430,21 @@ const Section223 = () => {
           <p>其中σnoise为观测噪声标准差。</p>
           <h5>课堂活动设计</h5>
           <h3>步骤1：问题设定</h3>
-          <p>提供模拟监测数据（见下表），假设某监测井在时间t=100天时测得压力下降值为Pobs=2.5MPa。</p>
+          <p>
+            提供模拟监测数据（见下表），假设某监测井在时间t=100天时测得压力下降值为Pobs=2.5MPa。
+          </p>
           <div className="image-container">
             <img src={tu3} alt="模拟监测数据"></img>
           </div>
           <p>已知参数：ϕ=0.2, μ=0.03Pa\cdotps, σnoise=0.1MPa。</p>
           <p>渗透率先验范围：k∼[10−14,10−12]m2，对数均值μk=−13，σk=0.5。</p>
           <h3>步骤2：数值模型计算</h3>
-          <p>学生使用简化渗流方程（忽略源汇项q）计算不同渗透率k下的压力响应。</p>
-          <p>示例计算：当k=5×10−14m2，预测压力下降值P^(k)=2.0MPa（需推导公式或提供代码片段）。</p>
+          <p>
+            学生使用简化渗流方程（忽略源汇项q）计算不同渗透率k下的压力响应。
+          </p>
+          <p>
+            示例计算：当k=5×10−14m2，预测压力下降值P^(k)=2.0MPa（需推导公式或提供代码片段）。
+          </p>
           <h3>步骤3：贝叶斯更新</h3>
           <p>计算不同k值的似然函数P(y∣k)。</p>
           <p>假设先验分布为对数正态，计算后验分布P(k∣y)的均值和方差。</p>
@@ -1412,13 +1454,19 @@ const Section223 = () => {
             <img src={x67} alt="对数似然函数"></img>
           </div>
           <h3>步骤4：结果可视化与讨论</h3>
-          <p>绘制先验分布和后验分布曲线，说明监测数据如何缩小渗透率的不确定性范围。</p>
+          <p>
+            绘制先验分布和后验分布曲线，说明监测数据如何缩小渗透率的不确定性范围。
+          </p>
           <p>讨论：若新增一个监测点数据，后验分布如何变化？</p>
           <p>扩展思考：如何将贝叶斯方法与机器学习结合提高预测效率？</p>
           <strong>示例计算结果</strong>
           <p>假设通过数值模拟得到不同k对应的P^(k)，计算后验分布：</p>
-          <p>当k=5×10−14m2，P^(k)=2.0MPa，似然值：lnP(y∣k)=−2×0.12(2.5−2.0)2=−12.5.</p>
-          <p>结合先验分布，最终后验分布峰值出现在 k≈4.5×10−14m2，置信区间缩小至[4×10−14,6×10−14]。</p>
+          <p>
+            当k=5×10−14m2，P^(k)=2.0MPa，似然值：lnP(y∣k)=−2×0.12(2.5−2.0)2=−12.5.
+          </p>
+          <p>
+            结合先验分布，最终后验分布峰值出现在 k≈4.5×10−14m2，置信区间缩小至[4×10−14,6×10−14]。
+          </p>
         </div>
       </div>
     </div>

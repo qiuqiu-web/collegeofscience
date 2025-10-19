@@ -21,9 +21,9 @@ import cg15 from "../images/成果15.png";
 const Section23 = () => {
   return (
     <div>
-      <h1 className="page-title">2.3 辐射推广效果</h1>
+      <h1 className="page-title">辐射推广效果</h1>
       <div className="content-section">
-        <h3>2.3.1教学成果及应用证明材料</h3>
+        <h3>教学成果及应用证明材料</h3>
         <div className="image-container">
           <p>1.中国石油大学</p>
           <img src={cg1}></img>
@@ -44,7 +44,7 @@ const Section23 = () => {
           <p>5.重庆工商大学</p>
           <img src={cg5}></img>
         </div>
-        <h3>2.3.2 国际合作与跨领域交流</h3>
+        <h3>国际合作与跨领域交流</h3>
         <div className="image-container">
           <p>
             1."一带一路"引领学术盛宴：斯洛文尼亚专家来华共话动力系统学术前沿

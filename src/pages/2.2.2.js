@@ -36,7 +36,7 @@ import book27 from "../images/教材27.png";
 import book28 from "../images/教材28.png";
 const Section222 = () => {
   return (
-    <div>
+    <div className="content-section">
       <h4>3门优质课程、5部教材</h4>
       <div className="image-container">
         <h5>1. 3门优质课程</h5>
