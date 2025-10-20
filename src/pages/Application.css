@@ -7,14 +7,37 @@
   border-radius: 0;
   border: none;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.equation-container img {
+.equation-containerx {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formula-row {
+  display: flex;
+  align-items: center;
+  /* 公式与标号垂直居中对齐 */
+  gap: 10px;
+  /* 公式与标号的水平间距 */
+}
+
+.equation-container img,
+.equation-containerx img {
   max-width: 100%;
   height: auto;
   border-radius: 0;
@@ -162,6 +185,7 @@
   height: 1.2em;
   vertical-align: middle;
   margin: 0 2px;
+  box-shadow: none;
   display: inline-block;
 }
 

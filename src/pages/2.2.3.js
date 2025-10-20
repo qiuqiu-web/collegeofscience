@@ -1003,7 +1003,7 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x22} alt="损伤演化模型公式"></img>
-            (8.39)
+            <span className="formula-number">(8.39)</span>
           </div>
 
           <p>
@@ -1028,7 +1028,7 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x23} alt="应力平衡方程"></img>
-            (8.40)
+            <span className="formula-number">(8.40)</span>
           </div>
 
           <p>
@@ -1050,7 +1050,7 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x24} alt="应力关系方程"></img>
-            (8.41)
+            <span className="formula-number">(8.41)</span>
           </div>
 
           <p>
@@ -1064,7 +1064,7 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x25} alt="Biot孔弹性系数"></img>
-            (8.42)
+            <span className="formula-number">(8.42)</span>
           </div>
 
           <p>
@@ -1080,14 +1080,14 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x26} alt="修正应力平衡方程"></img>
-            (8.43)
+            <span className="formula-number">(8.43)</span>
           </div>
 
           <p>式(8.43)对应的边界条件如下：</p>
 
           <div className="equation-container">
             <img src={x27} alt="边界条件"></img>
-            (8.44)
+            <span className="formula-number">(8.44)</span>
           </div>
 
           <p>
@@ -1100,14 +1100,14 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x28} alt="边界关系"></img>
-            (8.45)
+            <span className="formula-number">(8.45)</span>
           </div>
 
           <h5>2) 流体连续性方程</h5>
 
           <div className="equation-container">
             <img src={x29} alt="流体连续性方程"></img>
-            (8.46)
+            <span className="formula-number">(8.46)</span>
           </div>
 
           <p>
@@ -1124,11 +1124,11 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x30} alt="Darcy定律流体体积增量"></img>
-            (8.47)
+            <span className="formula-number">(8.47)</span>
           </div>
           <div className="equation-container">
             <img src={x31} alt="Darcy定律流体体积增量"></img>
-            (8.48)
+            <span className="formula-number">(8.48)</span>
           </div>
 
           <p>
@@ -1149,7 +1149,7 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x32} alt="Biot模量"></img>
-            (8.49)
+            <span className="formula-number">(8.49)</span>
           </div>
 
           <p>
@@ -1158,14 +1158,14 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x33} alt="多孔弹性介质流体连续性方程"></img>
-            (8.50)
+            <span className="formula-number">(8.50)</span>
           </div>
 
           <p>式(8.50)对应的边界条件如下：</p>
 
           <div className="equation-container">
             <img src={x34} alt="压力边界条件"></img>
-            (8.51)
+            <span className="formula-number">(8.51)</span>
           </div>
 
           <p>
@@ -1178,7 +1178,7 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x35} alt="压力边界关系"></img>
-            (8.52)
+            <span className="formula-number">(8.52)</span>
           </div>
 
           <p>
@@ -1189,7 +1189,7 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x36} alt="各向异性渗透率张量"></img>
-            (8.53)
+            <span className="formula-number">(8.53)</span>
           </div>
 
           <p>
@@ -1205,7 +1205,7 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x37} alt="渗透率加权组成"></img>
-            (8.54)
+            <span className="formula-number">(8.54)</span>
           </div>
 
           <p>
@@ -1228,7 +1228,7 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x38} alt="裂缝渗透率计算模型"></img>
-            (8.55)
+            <span className="formula-number">(8.55)</span>
           </div>
 
           <p>
@@ -1241,17 +1241,17 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x39} alt="x方向裂缝宽度"></img>
-            (8.56)
+            <span className="formula-number">(8.56)</span>
           </div>
 
           <div className="equation-container">
             <img src={x40} alt="y方向裂缝宽度"></img>
-            (8.57)
+            <span className="formula-number">(8.57)</span>
           </div>
 
           <div className="equation-container">
             <img src={x41} alt="总裂缝宽度"></img>
-            (8.58)
+            <span className="formula-number">(8.58)</span>
           </div>
 
           <p>
@@ -1274,14 +1274,14 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x42} alt="渗透率加权系数"></img>
-            (8.59)
+            <span className="formula-number">(8.59)</span>
           </div>
 
           <p>临界应变与临界拉应力之间关系可表示为：</p>
 
           <div className="equation-container">
             <img src={x43} alt="临界应变与临界拉应力关系"></img>
-            (8.60)
+            <span className="formula-number">(8.60)</span>
           </div>
 
           <h5>数值求解</h5>
@@ -1292,36 +1292,42 @@ const Section223 = () => {
 
           <div className="equation-container">
             <img src={x44} alt="弱形式积分方程"></img>
-            (8.61)
+            <span className="formula-number">(8.61)</span>
             <img src={x45} alt="弱形式积分方程"></img>
             <img src={x46} alt="弱形式积分方程"></img>
-            (8.62)
+            <span className="formula-number">(8.62)</span>
           </div>
           <p>
             对于每个计算单元的位移场、压力场和对应权函数构造相应的插值函数，其插值形式为：
           </p>
           <div className="equation-container">
             <img src={x47} alt="插值函数"></img>
-            (8.63)
+            <span className="formula-number">(8.63)</span>
           </div>
           <p>将式(8.63)代入式(8.61)和(8.62)，可得：</p>
           <div className="equation-container">
             <img src={x48} alt="弱形式积分方程"></img>
-            (8.64)
+            <span className="formula-number">(8.64)</span>
             <img src={x49} alt="弱形式积分方程"></img>
-            (8.65)
+            <span className="formula-number">(8.65)</span>
           </div>
           <p>
             式中，Bu、Buvol和BP分别为应变矩阵、体积应变矩阵和压力插值形函数的导数矩阵.
           </p>
           <p>采用向后欧拉法对式(8.65)中关于时间导数的项进行离散，即：</p>
-          <div className="equation-container">
-            <img src={x50} alt="向后欧拉法离散"></img>
-            (8.66a)
-            <img src={x51} alt="向后欧拉法离散"></img>
-            (8.66b)
-            <img src={x52} alt="向后欧拉法离散"></img>
-            (8.66c)
+          <div className="equation-containerx">
+            <div className="formula-row">
+              <img src={x50} alt="向后欧拉法离散"></img>
+              <span className="formula-number">(8.66a)</span>
+            </div>
+            <div className="formula-row">
+              <img src={x51} alt="向后欧拉法离散"></img>
+              <span className="formula-number">(8.66b)</span>
+            </div>
+            <div className="formula-row">
+              <img src={x52} alt="向后欧拉法离散"></img>
+              <span className="formula-number">(8.66c)</span>
+            </div>
           </div>
           <p>
             将式(8.66)代入式(8.65)，并将第n
@@ -1329,39 +1335,61 @@ const Section223 = () => {
           </p>
           <div className="equation-container">
             <img src={x53} alt="向后欧拉法离散"></img>
-            (8.67)
+            <span className="formula-number">(8.67)</span>
           </div>
           <p>
             采用Newton-Raphson迭代法求解渗流-应力耦合方程组，因此将式(8.64)和(8.67)写成余量的形式：
           </p>
           <div className="equation-container">
             <img src={x55} alt="余量形式"></img>
-            (8.68)
+            <span className="formula-number">(8.68)</span>
             <img src={x56} alt="余量形式"></img>
-            (8.69)
+            <span className="formula-number">(8.69)</span>
           </div>
           <p>
             则渗流-应力耦合方程组在第个迭代步的Newton-Raphson（NR）迭代格式可写为：
           </p>
           <div className="equation-container">
             <img src={x57} alt="Newton-Raphson迭代格式"></img>
-            (8.70)
+            <span className="formula-number">(8.70)</span>
           </div>
           <p>
             式(8.70)左边第一项为雅可比矩阵
             <img src={p67} alt="J" className="inline-math" />
             ，各分量为：
           </p>
-          <div className="equation-container">
+          {/* <div className="equation-container">
             <img src={x58} alt="雅可比矩阵分量"></img>
-            (8.71a)
+            <span className="formula-number">(8.71a)</span>
             <img src={x59} alt="雅可比矩阵分量"></img>
-            (8.71b)
+            <span className="formula-number">(8.71b)</span>
             <img src={x60} alt="雅可比矩阵分量"></img>
-            (8.71c)
+            <span className="formula-number">(8.71c)</span>
             <img src={x61} alt="雅可比矩阵分量"></img>
-            (8.71d)
+            <span className="formula-number">(8.71d)</span> */}
+          <div className="equation-containerx">
+            {/* <!-- 第一行：公式x58 + 标号(8.71a) --> */}
+            <div className="formula-row">
+              <img src={x58} alt="雅可比矩阵分量" />
+              <span className="formula-number">(8.71a)</span>
+            </div>
+            {/* <!-- 第二行：公式x59 + 标号(8.71b) --> */}
+            <div className="formula-row">
+              <img src={x59} alt="雅可比矩阵分量" />
+              <span className="formula-number">(8.71b)</span>
+            </div>
+            {/* <!-- 第三行：公式x60 + 标号(8.71c) --> */}
+            <div className="formula-row">
+              <img src={x60} alt="雅可比矩阵分量" />
+              <span className="formula-number">(8.71c)</span>
+            </div>
+            {/* <!-- 第四行：公式x61 + 标号(8.71d) --> */}
+            <div className="formula-row">
+              <img src={x61} alt="雅可比矩阵分量" />
+              <span className="formula-number">(8.71d)</span>
+            </div>
           </div>
+          {/* </div> */}
           <p>
             通过式(8.70)可求得第
             <img src={p68} alt="n+1" className="inline-math" />
@@ -1375,14 +1403,14 @@ const Section223 = () => {
           </p>
           <div className="equation-container">
             <img src={x62} alt="试探解"></img>
-            (8.72)
+            <span className="formula-number">(8.72)</span>
           </div>
           <p>
             若位移场和压力场的误差都满足式(35)所示的收敛条件时，迭代结束，否则继续迭代：
           </p>
           <div className="equation-container">
             <img src={x63} alt="收敛条件"></img>
-            (8.73)
+            <span className="formula-number">(8.73)</span>
           </div>
           <p>
             由图8-1可知，在压裂初始阶段，三种不同时间步长下注入点压力值相差较大，但是当注入时间超过18s后，不同时间步长下注入点压力值相差较小，并且在注入结束时注入点压力相对误差仅为0.15%，由此验证了该模型的收敛性和稳定性.
