@@ -55,6 +55,33 @@ const Section226 = () => {
           <img src={y11}></img>
           <img src={y12}></img>
         </div>
+        <div className="page-template">
+      {/* <h1 className="page-title">课程资源</h1> */}
+            <p>
+          <b>3.应用统计系列课程综合示范 </b>
+        </p>
+      {/* ...existing code... */}
+      <a
+        className="resource-card"
+        href="http://mooc1.chaoxing.com/course/257245511.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="打开 应用统计系列课程综合示范（在新窗口）"
+      >
+        <div className="resource-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 19.5C4 18.67 4.67 18 5.5 18H18.5C19.33 18 20 18.67 20 19.5V5.5C20 4.67 19.33 4 18.5 4H7.5C6.67 4 6 4.67 6 5.5V19.5Z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M6 8H18" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+        <div className="resource-body">
+          <div className="resource-title">应用统计系列课程综合示范</div>
+          <div className="resource-desc">超星慕课 · 视频课程 · 点击查看（将在新窗口打开）</div>
+        </div>
+        <div className="resource-arrow" aria-hidden="true">↗</div>
+      </a>
+      {/* ...existing code... */}
+    </div>
       </div>
     </div>
   );

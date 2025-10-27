@@ -178,3 +178,68 @@ img {
 .image-container p {
   text-indent: 0;
 }
+/* 资源卡片样式（新增） */
+.resource-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-top: 16px;
+  max-width: 720px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(20, 30, 60, 0.06);
+  text-decoration: none;
+  color: var(--text-color, #1f2937);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  border: 1px solid rgba(30, 40, 60, 0.04);
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(20, 30, 60, 0.12);
+}
+
+.resource-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+  /* icon color */
+  flex-shrink: 0;
+}
+
+.resource-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.resource-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resource-desc {
+  font-size: 13px;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resource-arrow {
+  margin-left: auto;
+  color: #9ca3af;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* ...existing code... */

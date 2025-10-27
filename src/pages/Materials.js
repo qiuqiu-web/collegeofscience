@@ -4,7 +4,7 @@ import './PageTemplate.css';
 const Materials = () => {
   return (
     <div className="page-template">
-      <h1 className="page-title">成果支撑材料</h1>
+      {/* <h1 className="page-title">成果支撑材料</h1>
 
       <div className="content-section">
         <h2>支撑材料目录</h2>
@@ -22,7 +22,7 @@ const Materials = () => {
           <li>新闻媒体报道</li>
           <li>科研成果</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
